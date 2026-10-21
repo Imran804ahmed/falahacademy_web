@@ -181,6 +181,29 @@ export function Footer() {
                 </span>
               </li>
             </ul>
+            {contact.mapEmbedUrl && (
+              <div className="mt-6 overflow-hidden rounded-xl border border-white/10">
+                <iframe
+                  src={contact.mapEmbedUrl}
+                  title={`Map showing the location of ${siteConfig.name}`}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                  className="block h-44 w-full border-0"
+                />
+              </div>
+            )}
+            {contact.mapLinkUrl && (
+              <a
+                href={contact.mapLinkUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-underline mt-3 inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-highlight transition-colors hover:text-white"
+              >
+                Get Directions
+                <span className="sr-only"> (opens Google Maps in a new tab)</span>
+              </a>
+            )}
           </div>
         </div>
       </Container>

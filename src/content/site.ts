@@ -46,8 +46,8 @@ export const siteConfig = {
     emailHref: "", // TODO: e.g. "mailto:info@your-domain"; link is hidden while empty
     hours: { days: "Monday – Friday", time: "8:00 AM – 3:00 PM" },
     // Google Maps embed URL (Share → Embed a map → copy the src). Placeholder panel shows while empty.
-    mapEmbedUrl: "", // TODO
-    mapLinkUrl: "", // TODO: Google Maps link; powers "Get Directions" buttons
+    mapEmbedUrl: "https://maps.google.com/maps?q=24.8766369,67.1770754&z=17&output=embed",
+    mapLinkUrl: "https://maps.app.goo.gl/DLHxt1Jz4Wa182nWA", // powers "Get Directions" buttons
   },
 
   // Icons always show; while a URL is empty its icon is shown but not linked.
