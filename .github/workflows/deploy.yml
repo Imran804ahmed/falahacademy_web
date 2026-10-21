@@ -38,52 +38,32 @@ jobs:
           test -f out/.htaccess
           echo "Files to deploy: $(find out -type f | wc -l)"
 
+      - name: Install lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      # lftp over explicit FTPS: reconnects and retries on its own, and only uploads
+      # files that changed (by size/time). Files on the server that are no longer in the
+      # build are left alone (no --delete), so nothing on Hostinger is removed by a deploy.
       - name: Deploy to Hostinger
-        id: deploy1
-        # Hostinger sometimes resets the FTP data socket (ECONNRESET); retry below
-        continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
-        with:
-          # Host only, no "ftp://" prefix and no trailing slash, e.g. ftp.falahacademy.pk or 123.45.67.89
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          # Hostinger resets plain-FTP data connections (ECONNRESET on the data socket),
-          # so use explicit FTPS. "loose" accepts Hostinger's cert when connecting by IP.
-          protocol: ftps
-          security: loose
-          port: 21
-          local-dir: ./out/
-          # Must END WITH "/" — e.g. "public_html/" or "./" if the FTP account already lands in public_html
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}
-          dangerous-clean-slate: false
-          timeout: 600000
-          log-level: standard
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-
-      - name: Wait before retry
-        if: steps.deploy1.outcome == 'failure'
-        run: sleep 20
-
-      - name: Deploy to Hostinger (retry)
-        if: steps.deploy1.outcome == 'failure'
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          security: loose
-          port: 21
-          local-dir: ./out/
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}
-          dangerous-clean-slate: false
-          timeout: 600000
-          log-level: standard
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}       # host/IP only, no "ftp://"
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          LFTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}  # read by lftp --env-password
+          FTP_SERVER_DIR: ${{ secrets.FTP_SERVER_DIR }} # "./" when the FTP account opens in public_html
+        run: |
+          lftp -e "
+            set cmd:fail-exit true;
+            set ftp:ssl-force true;
+            set ftp:ssl-protect-data true;
+            set ssl:verify-certificate no;
+            set ftp:passive-mode true;
+            set net:timeout 30;
+            set net:max-retries 5;
+            set net:reconnect-interval-base 5;
+            set net:reconnect-interval-max 30;
+            open --env-password -u \"$FTP_USERNAME\" -p 21 \"$FTP_SERVER\";
+            mirror --reverse --verbose --only-newer --parallel=4 \
+              --exclude-glob .git* --exclude-glob node_modules/ \
+              ./out/ \"$FTP_SERVER_DIR\";
+            bye
+          "
