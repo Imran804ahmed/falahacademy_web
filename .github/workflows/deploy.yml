@@ -4,12 +4,17 @@ on:
   push:
     branches:
       - main
-
   workflow_dispatch:
+
+# Don't let two deploys upload to the server at the same time
+concurrency:
+  group: deploy-hostinger
+  cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
       - name: Checkout Code
@@ -28,18 +33,29 @@ jobs:
         run: npm run build
 
       - name: Verify Static Export
-        run: test -f out/index.html
+        run: |
+          test -f out/index.html
+          test -f out/.htaccess
+          echo "Files to deploy: $(find out -type f | wc -l)"
 
       - name: Deploy to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
+          # Host only, no "ftp://" prefix and no trailing slash, e.g. ftp.falahacademy.pk or 123.45.67.89
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
+          # Hostinger shared hosting serves plain FTP on 21. FTPS with Hostinger's cert
+          # fails the hostname check when connecting by IP, so use plain FTP.
+          protocol: ftp
           port: 21
           local-dir: ./out/
+          # Must END WITH "/" — e.g. "public_html/" or "./" if the FTP account already lands in public_html
           server-dir: ${{ secrets.FTP_SERVER_DIR }}
           dangerous-clean-slate: false
-          dry-run: true
-
+          timeout: 600000
+          log-level: standard
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
