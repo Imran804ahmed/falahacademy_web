@@ -45,9 +45,10 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # Hostinger shared hosting serves plain FTP on 21. FTPS with Hostinger's cert
-          # fails the hostname check when connecting by IP, so use plain FTP.
-          protocol: ftp
+          # Hostinger resets plain-FTP data connections (ECONNRESET on the data socket),
+          # so use explicit FTPS. "loose" accepts Hostinger's cert when connecting by IP.
+          protocol: ftps
+          security: loose
           port: 21
           local-dir: ./out/
           # Must END WITH "/" — e.g. "public_html/" or "./" if the FTP account already lands in public_html
