@@ -51,6 +51,14 @@ jobs:
           LFTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}  # read by lftp --env-password
           FTP_SERVER_DIR: ${{ secrets.FTP_SERVER_DIR }} # "./" when the FTP account opens in public_html
         run: |
+          # Clean values: strip whitespace/newlines and any "ftp://" prefix or trailing "/"
+          HOST="$(printf '%s' "$FTP_SERVER" | tr -d '[:space:]')"
+          HOST="${HOST#ftp://}"; HOST="${HOST#ftps://}"; HOST="${HOST%/}"
+          USER_NAME="$(printf '%s' "$FTP_USERNAME" | tr -d '[:space:]')"
+          REMOTE_DIR="$(printf '%s' "$FTP_SERVER_DIR" | tr -d '[:space:]')"
+          REMOTE_DIR="${REMOTE_DIR:-./}"
+          echo "Deploying to host length ${#HOST}, remote dir: $REMOTE_DIR"
+
           lftp -e "
             set cmd:fail-exit true;
             set ftp:ssl-force true;
@@ -61,9 +69,7 @@ jobs:
             set net:max-retries 5;
             set net:reconnect-interval-base 5;
             set net:reconnect-interval-max 30;
-            open --env-password -u \"$FTP_USERNAME\" -p 21 \"$FTP_SERVER\";
-            mirror --reverse --verbose --only-newer --parallel=4 \
-              --exclude-glob .git* --exclude-glob node_modules/ \
-              ./out/ \"$FTP_SERVER_DIR\";
+            open --env-password -u $USER_NAME -p 21 $HOST;
+            mirror --reverse --verbose --only-newer --parallel=4 --exclude-glob .git* --exclude-glob node_modules/ ./out/ $REMOTE_DIR;
             bye
           "
