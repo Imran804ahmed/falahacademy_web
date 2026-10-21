@@ -1,0 +1,200 @@
+{
+  "/images/admissions/new-student.jpg": {
+    "width": 2400,
+    "height": 3600,
+    "hash": "b12bc8c7f80911ac",
+    "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoKAA8AA4BaJbACdAEQ+oTGAAAA/vBMWukrF2cl8q4Ui3IDU7gtvLODMmzQ1VHqi0lHuLajmoe0v6Y7O8bNkpZULF1+z73DmxSQU6kjlaJlZqCWPZt1cUQAAAA="
+  },
+  "/images/brand/logo-compact-light.png": {
+    "width": 826,
+    "height": 337,
+    "hash": "cbb7e99385aba81d",
+    "blurDataURL": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4WAoAAAAQAAAACQAAAwAAQUxQSCkAAAAAACBdXgMIAgUOADNgm04/b2A3bmN2fFd0SD5XWEtKJ11tMhYUFRkSCwBWUDggMAAAALABAJ0BKgoABAADgFolAE6AHoT2nOAA/pFP6NM8yeZpyiNCUqA3kFVQy7HflkAAAA=="
+  },
+  "/images/brand/logo-compact.png": {
+    "width": 826,
+    "height": 337,
+    "hash": "40289a1f2c8fa2f6",
+    "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4WAoAAAAQAAAACQAAAwAAQUxQSCkAAAAAACBdXgMIAgUOADNgm04/b2A3bmN2fFd0SD5XWEtKJ11tMhYUFRkSCwBWUDggOAAAAPABAJ0BKgoABAADgFolsAJ0ugACt3Md4AD+h3h10jWUsXuv0ogXg5+3Yu3Vb9Q8tG0JtMz1VAAA"
+  },
+  "/images/brand/logo-full.png": {
+    "width": 826,
+    "height": 337,
+    "hash": "11608bad0c966eb3",
+    "blurDataURL": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4WAoAAAAQAAAACQAAAwAAQUxQSCkAAAAAACBdXgMIAgUOADNgm01AcGE3b2N2fFd1RjxVVUlIJ11tMSEoJS0jHABWUDggNgAAAPABAJ0BKgoABAADgFolsAJ0ugACsxoWAAD+h3h10jHE7WME2NfVZ4tikNzPv3YaoZFcAzbQAA=="
+  },
+  "/images/brand/logo-mark-light.png": {
+    "width": 359,
+    "height": 337,
+    "hash": "1d2626fca3f2468d",
+    "blurDataURL": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4WAoAAAAQAAAACQAACAAAQUxQSFsAAAAAAAADAAsOAZyAAAABAAV1jkjMXQAAAmtNp+TdcgUBAHiQNmDESIJ4ABexVQCboABXtBY+ui9CyVIAQLs+e7KpnqgwYLKzfC1CVZXHl59WRCwAAAAAcXcAAAAAAFZQOCBCAAAAkAEAnQEqCgAJAAOAWiWwAnQA2JfYAP7G3PAUphlVNwLzUtWfvAWHLf2YkGNc2X+eiakE2mKyQcvt4Zw+IJAeIAAA"
+  },
+  "/images/brand/logo-mark.png": {
+    "width": 359,
+    "height": 337,
+    "hash": "87bf98aca837f9f2",
+    "blurDataURL": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4WAoAAAAQAAAACQAACAAAQUxQSFsAAAAAAAADAAsOAZyAAAABAAV1jkjMXQAAAmtNp+TdcgUBAHiQNmDESIJ4ABexVQCboABXtBY+ui9CyVIAQLs+e7KpnqgwYLKzfC1CVZXHl59WRCwAAAAAcXcAAAAAAFZQOCBSAAAA0AEAnQEqCgAJAAOAWiWwAnQA21NFhAAA/ScTH3QiP42+bHwT8iTdvm0XnfcF0HQYtaDhVu+Vj/ao5d93T3tSJjl/+TqRf9OgcxW/1pZTBtkAAA=="
+  },
+  "/images/campus/play-area.jpg": {
+    "width": 1600,
+    "height": 1060,
+    "hash": "4123701945626763",
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACQAgCdASoKAAcAA4BaJagCdGuAt/8DcBInDCt3gAD+v3h/ggPG5mKBqW2qirXwXHYxqmC1hH+jLYNApRXFrf6LaKOBxAAA"
+  },
+  "/images/classrooms/chalkboard-maths.jpg": {
+    "width": 1600,
+    "height": 1067,
+    "hash": "25c27e18bafa566f",
+    "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoKAAcAA4BaJYwAAlxSyjuBAAD+0ciyrigxQt2w6RTTRxjSs44HFTJ7GwAAAA=="
+  },
+  "/images/classrooms/early-learning.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "38652d5c55ee9700",
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoKAAcAA4BaJbACdAEWPdta9bvoAPlmwu4mEuruBsvxeXkVmPu21feDmlOgj2c+TKk64bwANM8lclnOJ9GL3UEK5Yk2ZAAA"
+  },
+  "/images/classrooms/hands-on-learning.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "ee31b67b08623851",
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoKAAcAA4BaJZgCdADaP+9AAP7tINYJGqTDaTu+4oxMJDZ+8WIy6zhBs/gTvmXgDTTQGS4xBzMj9avkQVfJtAAA"
+  },
+  "/images/classrooms/modern-classroom.jpg": {
+    "width": 1600,
+    "height": 900,
+    "hash": "2b7df761ba4d1b91",
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoKAAYAA4BaJZQCdADW3DuqAAD88sAFZs5CGKlc9AuePJNBvj1V/GXTDz1w7KqB8qTsHYAA"
+  },
+  "/images/classrooms/montessori-materials.jpg": {
+    "width": 1600,
+    "height": 1200,
+    "hash": "bddf7689dfde7a0f",
+    "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoKAAgAA4BaJYgCdAEYEYzO4XzDoAD+QSRoS8xXTHt6aCN3hxugYDj2i4bRVERAlzP5f1J2Hy6iye+vgoFAWPdrjxCZfSgIywOSgsAA"
+  },
+  "/images/events/debate.jpg": {
+    "width": 1600,
+    "height": 1067,
+    "hash": "4aeee08229ad93e8",
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoKAAcAA4BaJYwCdAD5afhjgAD+SRJblWZgc32sRGo7Z1A2ltdaqyYVAHvQAgX5gHyiHIBLifCnBP+AAAA="
+  },
+  "/images/events/graduation.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "cef72d67498ea90b",
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAQCdASoKAAcAA4BaJQBOgBsynGgAAP6hbTDR4qOPeydAkh3uH4CQmnVGju85QR6RVJhGMPPsum0MUtHA1ApcrIu0WO20j6AAAA=="
+  },
+  "/images/events/science-exhibition.jpg": {
+    "width": 1600,
+    "height": 1004,
+    "hash": "2690848432401980",
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoKAAYAA4BaJYwCdAD8LXEhDW4AAP5s3yS6Lea8gv8dlG4CafcCLXkCUTrkUi04ieKrnRZnCk20Y+R+u/SmH8moBheAAA=="
+  },
+  "/images/facilities/computer-lab.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "0b175a3950baca86",
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoKAAcAA4BaJZACdAEK/CwzuoAA/liURNFre3NSt0WOGNHnsgDxnJc+QUGQJWrnu+JMIrj/yb6FgAAA"
+  },
+  "/images/facilities/library-aisle.jpg": {
+    "width": 2000,
+    "height": 1334,
+    "hash": "eb18b17ea7fd7b32",
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoKAAcAA4BaJQBOgCPbHeTUmhgA/ZsHw7jYq9KZL0wAR+Mytedma1pCGK7VuAi73kZGG5A00JAAAA=="
+  },
+  "/images/facilities/library-stacks.jpg": {
+    "width": 1600,
+    "height": 1067,
+    "hash": "92b0cd988d794ab1",
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoKAAcAA4BaJYwCdADcqZ/uiOAA4nZON/sHI4H09+sIlG7kAtmLiIgGeJpEyPpR3mF+iCBGGfvhmAAA"
+  },
+  "/images/facilities/science-lab.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "4eaa0f69d6d7f517",
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoKAAcAA4BaJZQCw7D8Li/nCJoAAPZ3GKJSeY/x+UtzE8heEaTpcYIhlShJgYEkxyYnapmNBFSCEV4WQX3BSMVQFKgAAA=="
+  },
+  "/images/faculty/teacher-guidance.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "ff1497761cfd47e1",
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoKAAcAA4BaJZQAAuyOLnTRwAD8+93352Rodkrl7oMA9p22hVo9fjaSLm7dXv9/Q6u+UJnxAazENR6DxAgAAA=="
+  },
+  "/images/hero/students-classroom.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "30672b0b32afcab6",
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoKAAcAA4BaJQBOgB+Fz30d7QxgAP5ktmMEibe1jMMEZa/9t/87aeQLIZPwsn3SRPzKOa+iyagpnl0F1dOKIc6hm3AAAA=="
+  },
+  "/images/programs/college-student.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "4d88316ce133d425",
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoKAAcAA4BaJZACdADZVuS4AOH04W7ge0g1BGD7E46ImlAkK11IiWqawLRdM3j566MxG32oXEJlq/GToAA="
+  },
+  "/images/programs/intermediate.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "2bba73fb6ac22a87",
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoKAAcAA4BaJYwCdAEDfDPYwhAA9ol5dxmZ/xSmroUsmLs/R6bpj9yG3c2/8EutFqzE55ULOZYoAlg1Oc+DiP0Hez8oPEWv2ZGAAA=="
+  },
+  "/images/programs/middle.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "91bf3fc0ca6980ef",
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoKAAcAA4BaJQBOgBuuASkxNQAA/CJ4W8Das4IWUYMtx2kmyUWK7xMwS6lNSNZsWbHJWEk6ifnxrAAA"
+  },
+  "/images/programs/montessori.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "02f47f59f12eac66",
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoKAAcAA4BaJQBOgCFsn6amIAD+moPoxPEufOLQ15puzRYO2gPlrz3ZRonFTWZeYD24Y+wFJC+Ptwag9kiSsHFSAAA="
+  },
+  "/images/programs/primary.jpg": {
+    "width": 2400,
+    "height": 1450,
+    "hash": "b3a23254e3b0bd17",
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoKAAYAA4BaJQBdgCIZsrUdkAAA/QHk0pF4kgd827A3Nae2YS8IqvQHe0itHYv7b2hLvIbMkosRsSUAknFQAWsAAAA="
+  },
+  "/images/programs/secondary.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "a8903711aac5f270",
+    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoKAAcAA4BaJQBOgBusOwIO7wAA/spOjSMELy7BJKz/bfo5vjYn3z9tZUN5nGsmMAS7xNcZHcJmeK8CsZQjIPaGTCpDIX0ZAAA="
+  },
+  "/images/student-life/cricket.jpg": {
+    "width": 2400,
+    "height": 1350,
+    "hash": "cea265301838e866",
+    "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoKAAYAA4BaJYgCw7EQEmGbrgAA/NltGXeppY4fnOLVBDdhRYaZkaDQAAA="
+  },
+  "/images/student-life/football-match.jpg": {
+    "width": 1600,
+    "height": 935,
+    "hash": "d31e24d6c69dfa69",
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoKAAYAA4BaJbACdAD8Im1zgAD+ZBOKiV3Am0oqI8LTMcgn///yFS299sbhfzD6HWHGgAAA"
+  },
+  "/images/student-life/friends.jpg": {
+    "width": 1600,
+    "height": 1142,
+    "hash": "bcbc6c84d76323b8",
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoKAAcAA4BaJbACdAD0DB/NyAD5CMQc+dUQ41WdZISnAca9FC0S/XJZdEhlJYRNaf9dfgrBK6Pd/3fva6w/7uE7NGgAAA=="
+  },
+  "/images/student-life/independence-day.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "728d1cc1c771c1f5",
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoKAAcAA4BaJQAAW55xukT4AP3Gkw/lI9dcSZJNf8uYJvSFummx6Klu2pgI8vR+JbE70C9BqegAAA=="
+  },
+  "/images/student-life/painting.jpg": {
+    "width": 1600,
+    "height": 1063,
+    "hash": "c0a3600d28c94f61",
+    "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoKAAcAA4BaJZgCdH8AFcXYfBEwAP7I+h5NnsyN8k+sbYduOovMB42HPysIjIfJrcYwiYaynG4g5QkGmDH6OWeyq4DxcVhSjPjsbgAA"
+  },
+  "/images/student-life/quran.jpg": {
+    "width": 1600,
+    "height": 1067,
+    "hash": "6f730cd2c23683d9",
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoKAAcAA4BaJZACdADcH5gqIADOOEexseAnT3Q+KN2MTud45f0GU8otyfgAB6oUfw4YhszfREjjGIqvAAA="
+  }
+}

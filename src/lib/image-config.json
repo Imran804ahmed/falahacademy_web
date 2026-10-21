@@ -1,0 +1,28 @@
+{
+  "deviceSizes": [
+    640,
+    828,
+    1200,
+    1920
+  ],
+  "imageSizes": [
+    128,
+    256,
+    384
+  ],
+  "avif": [
+    "/images/hero/students-classroom.jpg",
+    "/images/programs/secondary.jpg",
+    "/images/classrooms/chalkboard-maths.jpg",
+    "/images/admissions/new-student.jpg",
+    "/images/facilities/library-aisle.jpg",
+    "/images/facilities/computer-lab.jpg",
+    "/images/student-life/friends.jpg",
+    "/images/student-life/cricket.jpg",
+    "/images/events/debate.jpg",
+    "/images/events/graduation.jpg",
+    "/images/events/science-exhibition.jpg",
+    "/images/faculty/teacher-guidance.jpg",
+    "/images/programs/primary.jpg"
+  ]
+}

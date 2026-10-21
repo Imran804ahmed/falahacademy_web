@@ -1,0 +1,560 @@
+@import "tailwindcss";
+
+/*
+ * Falah Academy design system
+ * ---------------------------------------------------------------
+ * Palette taken from the logo (public/images/brand/logo-*.png):
+ *   Primary    logo blue   #0d4485 (wordmark), used for headings, primary buttons
+ *   Secondary  logo teal   #0b8d9d (book spine), icons and small accents (text: #0a6d7a)
+ *   Highlight  logo green  #3cc6a0 (rising arrow), CTAs and highlights on navy
+ *   Gradient   blue → teal → green, the sweep of the book-and-arrow mark
+ *   Surfaces   off-white paper, white cards, deep logo-blue navy for dark bands
+ */
+@theme {
+  /* surfaces */
+  --color-bg: #f7f9fc;
+  --color-bg-elevated: #ffffff;
+  --color-bg-tint: #eef3fa;
+  --color-bg-inverted: #071d3d;
+  --color-ink-2: #0a2a55;
+  --color-ink-3: #12396f;
+
+  /* text */
+  --color-fg: #0b1a33;
+  --color-fg-muted: #4a5568;
+  --color-fg-inverted: #f7f9fc;
+  --color-fg-inverted-muted: #b4c0d4;
+
+  /* lines */
+  --color-border: #dfe6f0;
+  --color-border-inverted: #1f4677;
+
+  /* primary: logo blue */
+  --color-accent: #134a94;
+  --color-accent-strong: #0d4485;
+  --color-accent-soft: #e7eef8;
+  --color-accent-fg: #ffffff;
+  --color-royal: #2f6fd8; /* focus rings, links */
+
+  /* secondary: logo teal (the token keeps its historical name) */
+  --color-emerald: #0a6d7a; /* teal for text and icons: 6:1 on white */
+  --color-emerald-strong: #08596a;
+  --color-emerald-soft: #e1f4f3;
+  --color-emerald-light: #3cc6af; /* logo teal-green, for use on navy */
+
+  /* highlight: logo green */
+  --color-highlight: #3cc6a0;
+  --color-highlight-strong: #5ad4b0;
+  --color-highlight-soft: #def6ee;
+  --color-highlight-fg: #03302a;
+  --color-highlight-deep: #0a7a5e; /* green text on light surfaces: 5.3:1 */
+
+  /* body: DM Sans; headings: Plus Jakarta Sans */
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-jakarta), var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+
+  /* type scale (fluid display sizes, fixed UI sizes)
+     display-xl  home hero h1, sized to its column (cqi); needs an `@container` ancestor
+     display-lg  page header h1
+     display-md  section h2
+     title       card / block h3 */
+  --text-display-xl: clamp(2.25rem, 0.9rem + 7cqi, 4.25rem);
+  --text-display-xl--line-height: 1.08;
+  --text-display-xl--letter-spacing: -0.035em;
+  --text-display-lg: clamp(2.1rem, 1.5rem + 2.6vw, 3.5rem);
+  --text-display-lg--line-height: 1.1;
+  --text-display-lg--letter-spacing: -0.03em;
+  --text-display-md: clamp(1.75rem, 1.3rem + 1.7vw, 2.625rem);
+  --text-display-md--line-height: 1.15;
+  --text-display-md--letter-spacing: -0.025em;
+  --text-title: 1.1875rem;
+  --text-title--line-height: 1.35;
+  --text-title--letter-spacing: -0.01em;
+  /* body sizes */
+  --text-lead: 1.125rem; /* section intros, hero copy on desktop */
+  --text-lead--line-height: 1.7;
+  --text-body: 0.9375rem; /* card copy */
+  --text-body--line-height: 1.65;
+  --text-label: 0.6875rem; /* eyebrows, badges, footer headings */
+  --text-label--line-height: 1;
+  --text-label--letter-spacing: 0.14em;
+
+  /* containers */
+  --container-content: 80rem; /* page content (max-w-content) */
+  --container-wide: 90rem; /* header bar (max-w-wide) */
+  --container-reading: 40rem; /* readable paragraph width (max-w-reading) */
+
+  /* motion: one easing curve, three durations */
+  --default-transition-duration: 250ms;
+  --default-transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* spacing follows an 8px scale (Tailwind units of 4px: 2, 4, 6, 8, 10, 12, 16, 20, 24);
+     half steps (1.5, 2.5) are used only for icon-to-text gaps */
+  /* fluid section rhythm: 64px on phones up to 112px on desktop */
+  --spacing-section: clamp(4rem, 3.2rem + 3.5vw, 7rem);
+  --spacing-section-sm: clamp(3rem, 2.4rem + 2.6vw, 5rem);
+  /* page side gutter below sm (px-gutter): 16px on a 320px phone up to 24px from ~430px */
+  --spacing-gutter: clamp(1rem, 0.25rem + 3.75vw, 1.5rem);
+
+  /* shape */
+  /* one card radius (lg) across the site; xl for large panels and media */
+  --radius-sm: 0.625rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.125rem;
+  --radius-xl: 1.5rem;
+  --radius-section: clamp(2rem, 1.5rem + 2.2vw, 3rem);
+
+  /* depth: navy-tinted shadows */
+  --shadow-soft: 0 1px 2px rgb(7 29 61 / 0.04), 0 10px 28px -14px rgb(7 29 61 / 0.16);
+  --shadow-lift: 0 2px 4px rgb(7 29 61 / 0.05), 0 26px 50px -22px rgb(7 29 61 / 0.3);
+  --shadow-deep: 0 30px 80px -30px rgb(4 18 40 / 0.7);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 200ms; /* colour / focus changes */
+  --duration-base: 350ms; /* hover lift, card elevation */
+  --duration-slow: 700ms; /* image zoom, reveals */
+}
+
+:root {
+  --header-h: 4.5rem;
+  color-scheme: light;
+}
+@media (min-width: 40rem) {
+  :root {
+    --header-h: 5rem;
+  }
+}
+/* phones in landscape: a slimmer bar leaves more of the short viewport for content */
+@media (orientation: landscape) and (max-height: 30rem) {
+  :root {
+    --header-h: 4rem;
+  }
+}
+
+/* ultra-wide screens: every size here is rem-based, so a slightly larger root
+   scales the whole layout in proportion instead of leaving a small island of
+   content in the middle (media queries still resolve against the 16px default) */
+@media (min-width: 120rem) {
+  html {
+    font-size: 106.25%;
+  }
+}
+@media (min-width: 160rem) {
+  html {
+    font-size: 118.75%;
+  }
+}
+
+/* element defaults live in the base layer so utilities (font-sans, tracking-*) can override them */
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  h4 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + 1.5rem);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-accent-fg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-royal);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+/* highlight ring reads better than blue on the navy surfaces */
+.surface-ink :focus-visible,
+.surface-footer :focus-visible,
+.menu-ink :focus-visible {
+  outline-color: var(--color-highlight);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- header ------------------------------------------------------------ */
+
+/* frosted white bar once the page scrolls */
+.glass-light {
+  background: rgb(255 255 255 / 0.86);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  backdrop-filter: blur(16px) saturate(160%);
+  box-shadow:
+    0 1px 0 rgb(7 29 61 / 0.06),
+    0 12px 30px -20px rgb(7 29 61 / 0.35);
+}
+
+/* nav link underline that grows from the centre on hover */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0.625rem;
+  right: 0.625rem;
+  bottom: 0.4rem;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--color-highlight);
+  transform: scaleX(0);
+  transition: transform 0.3s var(--ease-out-expo);
+}
+@media (min-width: 80rem) {
+  .nav-link::after {
+    left: 0.875rem;
+    right: 0.875rem;
+  }
+}
+.nav-link:hover::after,
+.nav-link[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+/* full-screen mobile menu */
+.menu-ink {
+  color: var(--color-fg-inverted);
+  background:
+    radial-gradient(50rem 26rem at 90% -10%, rgb(47 111 216 / 0.35), transparent 60%),
+    radial-gradient(36rem 24rem at 0% 110%, rgb(60 198 160 / 0.12), transparent 60%),
+    linear-gradient(180deg, var(--color-bg-inverted), var(--color-ink-2));
+}
+
+/* ---- stats ------------------------------------------------------------- */
+
+.stat-figure {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- photo scrims ------------------------------------------------------ */
+
+/* dark on the copy side, opening up towards the right; even on narrow screens */
+.scrim-hero {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgb(7 29 61 / 0.9) 0%, rgb(7 29 61 / 0.7) 40%, rgb(7 29 61 / 0.28) 75%, rgb(7 29 61 / 0.2) 100%);
+}
+@media (max-width: 47.99rem) {
+  .scrim-hero {
+    background: linear-gradient(180deg, rgb(7 29 61 / 0.5) 0%, rgb(7 29 61 / 0.72) 50%, rgb(7 29 61 / 0.9) 100%);
+  }
+}
+
+/* ---- reusable surfaces ------------------------------------------------ */
+
+/* dark navy surface with a soft royal glow and a hint of highlight */
+.surface-ink {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background:
+    radial-gradient(60rem 30rem at 88% -10%, rgb(47 111 216 / 0.32), transparent 60%),
+    radial-gradient(40rem 26rem at 0% 110%, rgb(60 198 160 / 0.1), transparent 60%),
+    linear-gradient(180deg, var(--color-bg-inverted), var(--color-ink-2));
+  color: var(--color-fg-inverted);
+}
+
+/* eight-point-star lattice (a classic Islamic geometric motif) for navy
+   bands, drawn as hairlines and masked to fade out towards the copy */
+.pattern-geo {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.1' stroke-width='1'%3E%3Crect x='16' y='16' width='24' height='24'/%3E%3Crect x='16' y='16' width='24' height='24' transform='rotate(45 28 28)'/%3E%3Cpath d='M28 11V0M28 45v11M11 28H0M45 28h11'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 56px 56px;
+  mask-image: radial-gradient(75% 85% at 85% 15%, #000 0%, transparent 75%);
+}
+
+.surface-footer {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background:
+    radial-gradient(50rem 30rem at 85% 0%, rgb(47 111 216 / 0.18), transparent 65%),
+    linear-gradient(180deg, #061934, #071d3d);
+  color: var(--color-fg-inverted);
+}
+
+/* soft tinted band for alternating light sections */
+.surface-tint {
+  background:
+    radial-gradient(46rem 24rem at 100% 0%, rgb(47 111 216 / 0.07), transparent 60%),
+    radial-gradient(40rem 22rem at 0% 100%, rgb(11 141 157 / 0.05), transparent 60%),
+    var(--color-bg-tint);
+}
+
+/* the logo's teal → green sweep, tuned for text on navy */
+.text-brand-gradient {
+  background: linear-gradient(100deg, #5bb8e6 0%, #3cc6af 50%, #8be5c4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---- text utilities ---------------------------------------------------- */
+
+/* small uppercase label: eyebrows, badges, footer headings */
+@utility label {
+  font-size: var(--text-label);
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--text-label--letter-spacing);
+}
+
+/* inline text link whose underline draws in from the left on hover/focus */
+@utility link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size var(--duration-base) var(--ease-out-expo);
+  &:hover,
+  &:focus-visible {
+    background-size: 100% 1.5px;
+  }
+}
+
+/* ---- cards & fields ---------------------------------------------------- */
+
+/* the one card surface used site-wide */
+@utility card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+  box-shadow: var(--shadow-soft);
+}
+
+/* form control: inputs, selects, textareas */
+@utility field {
+  min-height: 3rem;
+  width: 100%;
+  min-width: 0;
+  border-radius: var(--radius-md);
+  border: 1px solid #cfd7e4;
+  background: var(--color-bg-elevated);
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: var(--color-fg);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  &::placeholder {
+    color: rgb(74 85 104 / 0.7);
+  }
+  &:hover {
+    border-color: #b5c1d4;
+  }
+  &:focus {
+    outline: none;
+    border-color: var(--color-royal);
+    box-shadow: 0 0 0 4px rgb(47 111 216 / 0.15);
+  }
+  &[aria-invalid="true"] {
+    border-color: #c53030;
+  }
+  &[aria-invalid="true"]:focus {
+    box-shadow: 0 0 0 4px rgb(197 48 48 / 0.14);
+  }
+  @media (min-width: 40rem) {
+    font-size: 0.9375rem;
+  }
+}
+
+/* horizontal swipe row on phones: cards snap into place, scrollbar hidden */
+@utility snap-row {
+  @media (max-width: 39.99rem) {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    /* bleeds to the screen edge through the Container gutter */
+    scroll-padding-inline: var(--spacing-gutter);
+    margin-inline: calc(var(--spacing-gutter) * -1);
+    padding: 0.25rem var(--spacing-gutter) 1.5rem;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    & > * {
+      flex: 0 0 82%;
+      scroll-snap-align: start;
+    }
+  }
+}
+
+/* raised card that lifts on hover: transform + shadow only */
+.card-lift {
+  transition:
+    transform var(--duration-base) var(--ease-out-expo),
+    box-shadow var(--duration-base) var(--ease-out-expo),
+    border-color var(--duration-fast) ease;
+}
+@media (hover: hover) {
+  .card-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lift);
+    border-color: color-mix(in srgb, var(--color-royal) 35%, var(--color-border));
+  }
+}
+.card-lift:active {
+  transform: scale(0.99);
+}
+
+/* ---- FAQ accordion (native <details>) --------------------------------- */
+
+.faq-item summary {
+  list-style: none;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item[open] .faq-icon {
+  transform: rotate(45deg);
+  background: var(--color-accent);
+  color: var(--color-accent-fg);
+}
+@supports (interpolate-size: allow-keywords) {
+  .faq-item {
+    interpolate-size: allow-keywords;
+  }
+  .faq-item::details-content {
+    height: 0;
+    overflow: clip;
+    transition:
+      height 0.35s var(--ease-out-expo),
+      content-visibility 0.35s allow-discrete;
+  }
+  .faq-item[open]::details-content {
+    height: auto;
+  }
+}
+
+/* ---- motion ----------------------------------------------------------- */
+
+/* transform-only: fading opacity here would hide the LCP image/headline from
+   the first paint and delay Largest Contentful Paint on every page */
+@keyframes page-in {
+  from {
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.page-in {
+  animation: page-in 0.5s var(--ease-out-expo) both;
+}
+
+/* above-the-fold entrances: plain CSS, so copy animates on first paint */
+@keyframes enter-up {
+  from {
+    opacity: 0;
+    transform: translateY(var(--enter-y, 20px));
+  }
+}
+
+@keyframes enter-word {
+  from {
+    transform: translateY(105%);
+  }
+}
+
+@keyframes hero-zoom {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* scroll cue: a slow downward drift, calmer than a bounce */
+@keyframes nudge {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(5px);
+    opacity: 1;
+  }
+}
+
+.enter-up {
+  animation: enter-up var(--enter-duration, 0.6s) var(--ease-out-expo) both;
+}
+
+.enter-word {
+  animation: enter-word 0.8s var(--ease-out-expo) both;
+}
+
+.hero-zoom {
+  animation: hero-zoom 2.4s var(--ease-out-expo) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .card-lift:hover,
+  .card-lift:active {
+    transform: none;
+  }
+  .enter-up,
+  .enter-word,
+  .hero-zoom {
+    animation: none;
+  }
+}
