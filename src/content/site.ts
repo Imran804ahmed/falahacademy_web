@@ -14,12 +14,14 @@ export const siteConfig = {
   foundingYear: null as number | null, // TODO: e.g. 2015; used in structured data once set
 
   seo: {
-    title: "Falah Academy | Montessori to Intermediate School in Pakistan",
+    title: "Falah Academy | Montessori to Intermediate School in Karachi",
     description:
-      "Falah Academy offers quality education from Montessori to Intermediate in Pakistan: strong academics, Matric and Intermediate board exam preparation, character building and a safe, caring campus. Admissions open.",
+      "Falah Academy is a school in Karachi offering education from Montessori to Intermediate: strong academics, Matric and Intermediate board exam preparation, character building and a safe, caring campus.",
     ogImage: "/images/hero/students-classroom.jpg",
     keywords: [
       "Falah Academy",
+      "school in Karachi",
+      "Montessori in Karachi",
       "school in Pakistan",
       "Montessori education",
       "primary school",
@@ -36,12 +38,12 @@ export const siteConfig = {
 
   // ---- Contact details -------------------------------------------------
   contact: {
-    address: "[Add School Address]", // TODO
-    city: "[City]", // TODO
+    address: "20/1, Moinabad, Alfalah Society, Malir Halt",
+    city: "Karachi",
     country: "Pakistan",
-    phone: "[Add Phone Number]", // TODO
-    phoneHref: "", // TODO: e.g. "tel:+92XXXXXXXXXX"; Call buttons are hidden while empty
-    whatsappHref: "", // TODO: e.g. "https://wa.me/92XXXXXXXXXX"; WhatsApp buttons are hidden while empty
+    phone: "+92 319 0818093",
+    phoneHref: "tel:+923190818093", // Call buttons are hidden while empty
+    whatsappHref: "https://wa.me/923190818093", // WhatsApp buttons are hidden while empty
     email: "[Add Email Address]", // TODO
     emailHref: "", // TODO: e.g. "mailto:info@your-domain"; link is hidden while empty
     hours: { days: "Monday – Friday", time: "8:00 AM – 3:00 PM" },

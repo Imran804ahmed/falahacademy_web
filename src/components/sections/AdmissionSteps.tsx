@@ -3,7 +3,6 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GrowLine, RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { admissionSteps } from "@/content/school";
-import { siteConfig } from "@/content/site";
 import { cn } from "@/lib/cn";
 
 /**
@@ -48,9 +47,9 @@ export function AdmissionSteps({ className, withActions }: { className?: string;
         </div>
         {withActions && (
           <div className="mt-12 flex flex-col justify-center gap-3 sm:flex-row sm:gap-4">
-            <Button href={siteConfig.applyHref}>Apply for Admission</Button>
+            <Button href="/admissions">Admission Details</Button>
             <Button href="/contact" variant="secondary" showArrow={false}>
-              Contact Admissions
+              Contact the Academy
             </Button>
           </div>
         )}

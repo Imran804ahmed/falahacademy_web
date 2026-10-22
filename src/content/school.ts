@@ -65,12 +65,12 @@ export type IconItem = { icon: Icon; title: string; body: string };
  */
 export const stats: { value: string; label: string; icon: Icon }[] = [];
 
-/** Non-numeric trust indicators shown under the home hero. */
+/** The four strengths shown in "Why Choose Falah Academy?" on the home page (the About page shows all of `whyChooseUs`). */
 export const trustIndicators: IconItem[] = [
-  { icon: Stairs, title: "Montessori to Intermediate", body: "One school for every stage of your child's education." },
-  { icon: ChalkboardTeacher, title: "Experienced Faculty", body: "Dedicated teachers who know every student by name." },
-  { icon: Exam, title: "Board Exam Preparation", body: "Structured preparation for Matric and Intermediate." },
-  { icon: ShieldCheck, title: "Safe Learning Environment", body: "A secure, supervised and caring campus." },
+  { icon: Stairs, title: "Montessori to Intermediate", body: "One school for every stage, so your child learns with consistent standards from the first day to Intermediate." },
+  { icon: ChalkboardTeacher, title: "Dedicated Teachers", body: "Teachers who follow each student's progress and keep parents informed." },
+  { icon: Exam, title: "Board Exam Preparation", body: "Regular tests, revision and guidance for Matric and Intermediate board exams." },
+  { icon: ShieldCheck, title: "Safe, Values-Based Campus", body: "A supervised, caring school where discipline, good manners and Islamic values are part of daily life." },
 ];
 
 export const whyChooseUs: IconItem[] = [

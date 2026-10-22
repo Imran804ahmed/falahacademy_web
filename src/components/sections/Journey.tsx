@@ -17,13 +17,13 @@ export function Journey({ className, showLink = true }: { className?: string; sh
       <Container>
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeading
-            eyebrow="The Educational Journey"
+            eyebrow="Academic Programs"
             title="From first steps to future success"
             body="Your child can complete their entire school education at Falah Academy, with each stage building on the last."
           />
           {showLink && (
             <Button href="/academics" variant="secondary" className="self-start lg:self-auto">
-              Explore Academics
+              View All Programs
             </Button>
           )}
         </div>

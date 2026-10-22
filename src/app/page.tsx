@@ -1,19 +1,12 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/sections/Hero";
-import { TrustBar } from "@/components/sections/TrustBar";
-import { Stats } from "@/components/sections/Stats";
 import { AboutPreview } from "@/components/sections/AboutPreview";
 import { Journey } from "@/components/sections/Journey";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
-import { StageSpotlights } from "@/components/sections/StageSpotlights";
-import { Faculty } from "@/components/sections/Faculty";
-import { StudentLife } from "@/components/sections/StudentLife";
-import { Facilities } from "@/components/sections/Facilities";
-import { GalleryPreview } from "@/components/sections/GalleryPreview";
-import { Testimonials } from "@/components/sections/Testimonials";
 import { AdmissionSteps } from "@/components/sections/AdmissionSteps";
-import { News } from "@/components/sections/News";
-import { AdmissionsCTA } from "@/components/sections/AdmissionsCTA";
+import { GalleryPreview } from "@/components/sections/GalleryPreview";
+import { HomeContact } from "@/components/sections/HomeContact";
+import { trustIndicators } from "@/content/school";
 import { siteConfig } from "@/content/site";
 
 export const metadata: Metadata = {
@@ -22,29 +15,25 @@ export const metadata: Metadata = {
 };
 
 /*
- * Home answers a parent's questions in order: who is Falah Academy and which
- * classes does it teach (hero, trust bar, welcome, journey), why trust it (why
- * choose us, the stages, faculty, student life, facilities), and what to do next
- * (admission steps, closing call to action).
+ * Home answers a parent's five questions, briefly, in order: who is Falah Academy
+ * (hero, about), which classes it teaches (programs), why choose it, how admissions
+ * work, and how to get in touch. Detail lives on the inner pages: faculty and values
+ * on /about, facilities on /facilities, activities on /student-life, news on /news-events.
  */
 export default function Home() {
   return (
     <>
       <Hero />
-      <TrustBar />
-      <Stats />
       <AboutPreview />
       <Journey className="surface-tint py-section" />
-      <WhyChooseUs className="py-section" />
-      <StageSpotlights />
-      <Faculty className="py-section" />
-      <StudentLife limit={6} className="surface-tint py-section" />
-      <Facilities limit={6} className="bg-bg-elevated py-section" />
-      <Testimonials />
-      <AdmissionSteps className="py-section" withActions />
+      <WhyChooseUs
+        className="py-section"
+        items={trustIndicators}
+        body="A balanced education with strong academics, sound character and close care for every child."
+      />
+      <AdmissionSteps className="surface-tint py-section" withActions />
       <GalleryPreview />
-      <News preview className="surface-tint py-section" />
-      <AdmissionsCTA />
+      <HomeContact />
     </>
   );
 }
