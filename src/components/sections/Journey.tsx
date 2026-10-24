@@ -66,6 +66,13 @@ export function Journey({ className, showLink = true }: { className?: string; sh
             })}
           </RevealGroup>
         </div>
+
+        <p className="mt-10 text-center text-body text-fg-muted">
+          We also offer tuition, O/A Level coaching, entry test preparation, career counseling and Huffaz classes.{" "}
+          <Link href="/academics#services" className="font-bold text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent">
+            See all services
+          </Link>
+        </p>
       </Container>
     </section>
   );

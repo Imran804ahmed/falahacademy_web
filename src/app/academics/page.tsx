@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { Academics } from "@/components/sections/Academics";
 import { Subjects } from "@/components/sections/Subjects";
+import { Services } from "@/components/sections/Services";
 import { TeachingApproach } from "@/components/sections/TeachingApproach";
 import { AdmissionsCTA } from "@/components/sections/AdmissionsCTA";
 
 export const metadata: Metadata = {
   title: "Academics",
   description:
-    "Academic programmes at Falah Academy from Montessori, Primary and Middle to Secondary (Matric) and Intermediate, with board exam preparation and a student-centred teaching approach.",
+    "Academic programmes at Falah Academy from Montessori, Primary and Middle to Secondary (Matric) and Intermediate, with board exam preparation, plus tuition, O/A Level coaching, entry test preparation, career counseling and Huffaz classes in Karachi.",
   alternates: { canonical: "/academics" },
 };
 
@@ -23,6 +24,7 @@ export default function AcademicsPage() {
       />
       <Academics />
       <Subjects />
+      <Services />
       <TeachingApproach />
       <AdmissionsCTA />
     </>

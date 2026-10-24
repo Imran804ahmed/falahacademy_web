@@ -19,6 +19,7 @@ import {
   ChatsCircle,
   ClipboardText,
   Code,
+  Compass,
   Confetti,
   Crown,
   Desktop,
@@ -316,6 +317,54 @@ export const teachingApproach: IconItem[] = [
   { icon: Brain, title: "Critical thinking", body: "Problem solving, reasoning and creativity across every subject." },
 ];
 
+// ---- Tuition & coaching services --------------------------------------------
+
+/** Services alongside the school programmes, taken from the academy's banners (Academics page, #services). */
+export const services: (IconItem & { points: string[] })[] = [
+  {
+    icon: ChalkboardTeacher,
+    title: "Tuition Center",
+    body: "Quality tuition for school students in every subject.",
+    points: ["Classes 1 – 8: all subjects", "Classes 9 – 12: group-wise tuition"],
+  },
+  {
+    icon: Mosque,
+    title: "Huffaz Tuition Centre",
+    body: "School tuition planned around Hifz, for girls and boys.",
+    points: ["Homework support and discipline", "Islamic Tarbiyyah and Quran recitation", "Personal development"],
+  },
+  {
+    icon: GraduationCap,
+    title: "O Level, A Level & IGCSE",
+    body: "Expert coaching for Cambridge students.",
+    points: ["All sciences", "Mathematics", "Commerce"],
+  },
+  {
+    icon: Exam,
+    title: "Entry Test Preparation",
+    body: "Coaching for university entry tests.",
+    points: ["Medical, Engineering, BBA / MBA", "Maths, Physics, Chemistry, Biology, English"],
+  },
+  {
+    icon: Compass,
+    title: "Career Counseling",
+    body: "Personality and skills assessment to help students choose their path.",
+    points: ["Path Finder (Classes 8 – 12)", "University selection (Class 12+)", "Interview preparation"],
+  },
+  {
+    icon: Microphone,
+    title: "English & Public Speaking",
+    body: "Confident communication for school, university and work.",
+    points: ["Spoken English and communication skills", "Public speaking and debate", "Presentation skills"],
+  },
+];
+
+export const servicePhotos: Photo[] = [
+  { src: "/images/services/tuition-huffaz-banners.jpg", alt: "Falah Academy banners for the Huffaz Tuition Centre, Tuition Center and Academic Tuition" },
+  { src: "/images/services/test-prep-counseling-banners.jpg", alt: "Falah Academy banners for Test Prep Services, Career Counseling and Academic Tuition" },
+  { src: "/images/services/wall-banners.jpg", alt: "Falah Academy wall banners for science and maths, Huffaz tuition, tuition classes and public speaking" },
+];
+
 // ---- Admissions ------------------------------------------------------------
 
 export const admissionSteps: { title: string; body: string }[] = [
@@ -493,6 +542,9 @@ export const galleryPhotos: GalleryPhoto[] = [
   { src: "/images/student-life/painting.jpg", alt: "Child painting colourful artwork", category: "activities", caption: "Art class" },
   { src: "/images/events/debate.jpg", alt: "Microphone on stage at a debate", category: "events", caption: "Debate competition" },
   { src: "/images/campus/play-area.jpg", alt: "Outdoor play area with slides", category: "campus", caption: "Play area" },
+  { src: "/images/services/tuition-huffaz-banners.jpg", alt: "Banners for the Huffaz Tuition Centre, Tuition Center and Academic Tuition", category: "campus", caption: "Tuition & Huffaz classes" },
+  { src: "/images/services/test-prep-counseling-banners.jpg", alt: "Banners for Test Prep Services, Career Counseling and Academic Tuition", category: "campus", caption: "Test prep & career counseling" },
+  { src: "/images/services/wall-banners.jpg", alt: "Wall banners for science and maths, Huffaz tuition, tuition classes and public speaking", category: "campus", caption: "Our programmes" },
 ];
 
 // ---- News & events -----------------------------------------------------------
