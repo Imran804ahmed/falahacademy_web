@@ -10,7 +10,6 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { IconCard } from "@/components/ui/IconCard";
-import { LogoMark } from "@/components/ui/Logo";
 import { blurProps } from "@/lib/image-meta";
 import { coreValues, history, mission, philosophy, principal, vision } from "@/content/school";
 
@@ -150,14 +149,15 @@ export default function AboutPage() {
         <div aria-hidden="true" className="pattern-geo" />
         <Container className="grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <Reveal from="left" className="mx-auto w-full max-w-sm">
-            {/* TODO: replace this placeholder with the Principal's photograph */}
-            <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-ink-3 to-bg-inverted shadow-deep">
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 p-8 text-center">
-                <LogoMark tone="light" className="w-28" />
-                <p className="label text-fg-inverted-muted">
-                  Principal&apos;s photo
-                </p>
-              </div>
+            <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-white/10 bg-bg-inverted shadow-deep">
+              <Image
+                src={principal.photo.src}
+                alt={principal.photo.alt}
+                fill
+                sizes="(min-width: 640px) 384px, 90vw"
+                className="object-cover object-[50%_20%]"
+                {...blurProps(principal.photo.src)}
+              />
               <div aria-hidden="true" className="absolute inset-3 rounded-lg border border-highlight/30" />
             </div>
           </Reveal>

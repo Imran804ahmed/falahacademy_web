@@ -157,8 +157,9 @@ export const philosophy: IconItem[] = [
 ];
 
 export const principal = {
-  name: "[Principal's Name]", // TODO
+  name: "Abdullah Shakeel",
   title: "Principal, Falah Academy",
+  photo: { src: "/images/faculty/principal.jpg", alt: "Abdullah Shakeel, Principal of Falah Academy" },
   message: [
     "Welcome to Falah Academy. Choosing a school is one of the most important decisions a family makes, and we are honoured that you are considering us as partners in your child's education, from the early years of Montessori to the final year of Intermediate.",
     "Our aim is to help every student discover their potential: to think clearly, speak confidently, act with integrity and care for others. We combine a strong academic programme with a nurturing environment where children feel safe, valued and inspired to do their best.",
