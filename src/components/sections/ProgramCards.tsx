@@ -12,9 +12,9 @@ import { cn } from "@/lib/cn";
 
 // soft, age-appropriate accents for the early-years cards (text colours pass 4.5:1 on white)
 const tones: Record<Exclude<FeaturedProgram["tone"], "navy">, { bar: string; text: string; tick: string; badge: string }> = {
-  sun: { bar: "bg-[#f4b740]", text: "text-[#94570a]", tick: "bg-[#fff1d6] text-[#94570a]", badge: "bg-[#fff6e3] text-[#94570a]" },
-  rose: { bar: "bg-[#ef8f9c]", text: "text-[#a63a4f]", tick: "bg-[#fde8ea] text-[#a63a4f]", badge: "bg-[#fff1f1] text-[#a63a4f]" },
-  sky: { bar: "bg-[#6aa7e8]", text: "text-accent", tick: "bg-accent-soft text-accent", badge: "bg-[#eef6ff] text-accent" },
+  sun: { bar: "bg-highlight", text: "text-emerald", tick: "bg-emerald-soft text-emerald", badge: "bg-bg-tint text-emerald" },
+  rose: { bar: "bg-[#a99bc9]", text: "text-lavender-deep", tick: "bg-lavender text-lavender-deep", badge: "bg-lavender-soft text-lavender-deep" },
+  sky: { bar: "bg-teal", text: "text-accent", tick: "bg-accent-soft text-accent", badge: "bg-accent-soft text-accent" },
 };
 
 const number = (i: number) => `Program ${String(i + 1).padStart(2, "0")}`;

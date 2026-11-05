@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#071d3d",
+  themeColor: "#283d42",
 };
 
 // School / EducationalOrganization structured data for search engines.

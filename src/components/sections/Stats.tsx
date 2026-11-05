@@ -22,12 +22,12 @@ export function Stats({ className }: { className?: string }) {
     <section aria-label="Falah Academy in numbers" className={className ?? "relative py-section-sm"}>
       <Container>
         {/* gradient frame: 1px of padding over a gradient, white card inside */}
-        <div className="rounded-xl bg-gradient-to-br from-highlight/70 via-border to-emerald/50 p-px shadow-[0_30px_60px_-30px_rgb(7_29_61/0.35),0_8px_20px_-12px_rgb(7_29_61/0.12)]">
+        <div className="rounded-xl bg-gradient-to-br from-highlight/70 via-border to-emerald/50 p-px shadow-[0_30px_60px_-30px_rgb(31_50_54/0.35),0_8px_20px_-12px_rgb(31_50_54/0.12)]">
           <div className="relative overflow-hidden rounded-[calc(var(--radius-xl)-1px)] bg-bg-elevated">
             {/* faint brand wash in the corner, for depth */}
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 bg-[radial-gradient(40rem_14rem_at_0%_0%,rgb(47_111_216/0.06),transparent_70%),radial-gradient(30rem_12rem_at_100%_100%,rgb(60_198_160/0.08),transparent_70%)]"
+              className="pointer-events-none absolute inset-0 bg-[radial-gradient(40rem_14rem_at_0%_0%,rgb(76_166_160/0.06),transparent_70%),radial-gradient(30rem_12rem_at_100%_100%,rgb(216_175_100/0.08),transparent_70%)]"
             />
             <RevealGroup
               as="ul"
@@ -46,7 +46,7 @@ export function Stats({ className }: { className?: string }) {
                       i === stats.length - 1 && "col-span-2 max-sm:flex-row max-sm:items-center sm:col-span-4"
                     )}
                   >
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-accent-strong text-highlight shadow-[0_8px_16px_-8px_rgb(13_68_133/0.6)] transition-[background-color,color,transform] duration-300 group-hover:-translate-y-0.5 group-hover:bg-highlight group-hover:text-accent-strong">
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-accent-strong text-highlight shadow-[0_8px_16px_-8px_rgb(40_61_66/0.6)] transition-[background-color,color,transform] duration-300 group-hover:-translate-y-0.5 group-hover:bg-highlight group-hover:text-accent-strong">
                       <Icon size={24} weight="duotone" aria-hidden="true" />
                     </span>
                     <span className="flex min-w-0 flex-col">

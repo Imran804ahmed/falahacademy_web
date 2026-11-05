@@ -7,10 +7,10 @@ type ButtonSize = "sm" | "md";
 
 /*
  * Button system
- *   primary    navy fill: main action on light surfaces
- *   highlight       highlight fill: main action on navy surfaces and photos
- *   secondary  navy outline: second action on light surfaces
- *   onDark     white outline: second action on navy surfaces and photos
+ *   primary    teal fill: main action on light surfaces
+ *   highlight  gold fill: main action on slate surfaces and photos
+ *   secondary  teal outline: second action on light surfaces
+ *   onDark     white outline: second action on slate surfaces and photos
  *   ghost      text link with underline
  */
 const base =
@@ -28,11 +28,11 @@ const sheen =
 const variants: Record<ButtonVariant, string> = {
   primary: cn(
     sheen,
-    "border border-accent bg-accent text-accent-fg shadow-[0_10px_24px_-12px_rgb(19_74_148/0.75)] hover:border-accent-strong hover:bg-accent-strong hover:shadow-[0_16px_30px_-12px_rgb(19_74_148/0.8)] focus-visible:outline-royal"
+    "border border-accent bg-accent text-accent-fg shadow-[0_10px_24px_-12px_rgb(42_115_110/0.75)] hover:border-accent-strong hover:bg-accent-strong hover:shadow-[0_16px_30px_-12px_rgb(42_115_110/0.8)] focus-visible:outline-royal"
   ),
   highlight: cn(
     sheen,
-    "border border-highlight bg-highlight text-highlight-fg shadow-[0_10px_28px_-12px_rgb(60_198_160/0.7)] hover:border-highlight-strong hover:bg-highlight-strong hover:shadow-[0_16px_34px_-12px_rgb(60_198_160/0.8)] focus-visible:outline-highlight"
+    "border border-highlight bg-highlight text-highlight-fg shadow-[0_10px_28px_-12px_rgb(216_175_100/0.7)] hover:border-highlight-strong hover:bg-highlight-strong hover:shadow-[0_16px_34px_-12px_rgb(216_175_100/0.8)] focus-visible:outline-highlight"
   ),
   secondary:
     "border-[1.5px] border-accent/25 bg-bg-elevated text-accent-strong hover:border-accent hover:bg-accent-soft focus-visible:outline-royal",

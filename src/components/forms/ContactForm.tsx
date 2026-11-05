@@ -261,7 +261,7 @@ export function ContactForm({ defaultSubject = "" }: { defaultSubject?: string }
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border border-accent bg-accent px-8 py-4 text-body font-bold text-accent-fg shadow-[0_10px_24px_-12px_rgb(19_74_148/0.75)] transition-[transform,background-color,box-shadow,opacity] duration-300 hover:-translate-y-0.5 hover:bg-accent-strong hover:shadow-[0_16px_30px_-12px_rgb(19_74_148/0.8)] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-royal active:translate-y-0 active:scale-[0.98] disabled:translate-y-0 disabled:opacity-70 sm:w-auto"
+          className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border border-accent bg-accent px-8 py-4 text-body font-bold text-accent-fg shadow-[0_10px_24px_-12px_rgb(42_115_110/0.75)] transition-[transform,background-color,box-shadow,opacity] duration-300 hover:-translate-y-0.5 hover:bg-accent-strong hover:shadow-[0_16px_30px_-12px_rgb(42_115_110/0.8)] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-royal active:translate-y-0 active:scale-[0.98] disabled:translate-y-0 disabled:opacity-70 sm:w-auto"
         >
           {status === "submitting" ? <Spinner /> : <PaperPlaneTilt size={16} weight="bold" aria-hidden="true" />}
           {status === "submitting" ? "Sending..." : "Send Message"}

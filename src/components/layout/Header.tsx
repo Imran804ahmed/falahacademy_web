@@ -80,7 +80,7 @@ export function Header() {
         <div
           aria-hidden="true"
           className={cn(
-            "absolute inset-0 bg-gradient-to-b from-[rgb(7_29_61/0.6)] to-transparent transition-opacity duration-500",
+            "absolute inset-0 bg-gradient-to-b from-[rgb(31_50_54/0.6)] to-transparent transition-opacity duration-500",
             solid || open ? "opacity-0" : "opacity-100",
           )}
         />

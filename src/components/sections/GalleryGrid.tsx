@@ -142,7 +142,7 @@ export function GalleryGrid({
                       <m.span
                         layoutId="gallery-filter"
                         transition={{ type: "spring", stiffness: 420, damping: 34 }}
-                        className="absolute inset-0 -z-0 rounded-full bg-accent shadow-[0_8px_20px_-8px_rgb(19_74_148/0.6)]"
+                        className="absolute inset-0 -z-0 rounded-full bg-accent shadow-[0_8px_20px_-8px_rgb(42_115_110/0.6)]"
                       />
                     )}
                     <span className="relative">{f.label}</span>

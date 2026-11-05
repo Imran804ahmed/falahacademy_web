@@ -10,7 +10,7 @@ export function TrustBar() {
   return (
     <section aria-label="Why parents trust Falah Academy" className="relative z-10 -mt-14 sm:-mt-20">
       <Container>
-        <div className="rounded-xl bg-gradient-to-br from-highlight/70 via-border to-emerald/50 p-px shadow-[0_30px_60px_-30px_rgb(7_29_61/0.35),0_8px_20px_-12px_rgb(7_29_61/0.12)]">
+        <div className="rounded-xl bg-gradient-to-br from-highlight/70 via-border to-emerald/50 p-px shadow-[0_30px_60px_-30px_rgb(31_50_54/0.35),0_8px_20px_-12px_rgb(31_50_54/0.12)]">
           <div className="relative overflow-hidden rounded-[calc(var(--radius-xl)-1px)] bg-bg-elevated">
             <RevealGroup
               as="ul"
@@ -23,7 +23,7 @@ export function TrustBar() {
                   key={title}
                   className="group flex items-start gap-4 bg-bg-elevated px-5 py-5 transition-colors duration-300 hover:bg-accent-soft/40 sm:px-6 sm:py-7"
                 >
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-accent-strong text-highlight shadow-[0_8px_16px_-8px_rgb(13_68_133/0.6)] transition-[background-color,color,transform] duration-300 group-hover:-translate-y-0.5 group-hover:bg-highlight group-hover:text-accent-strong">
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-accent-strong text-highlight shadow-[0_8px_16px_-8px_rgb(40_61_66/0.6)] transition-[background-color,color,transform] duration-300 group-hover:-translate-y-0.5 group-hover:bg-highlight group-hover:text-accent-strong">
                     <Icon size={24} weight="duotone" aria-hidden="true" />
                   </span>
                   <span className="min-w-0">

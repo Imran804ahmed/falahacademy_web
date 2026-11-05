@@ -8,10 +8,10 @@ import { cn } from "@/lib/cn";
 export type PhotoTone = "sun" | "rose" | "sky" | "navy";
 
 const panels: Record<PhotoTone, { bg: string; badge: string; lines: string }> = {
-  sun: { bg: "bg-[linear-gradient(140deg,#fff6e3,#ffe7b8_55%,#ffeccb)]", badge: "bg-white text-[#b9770b]", lines: "%23c98a12" },
-  rose: { bg: "bg-[linear-gradient(140deg,#fff1f1,#fbdcdc_55%,#fde8e4)]", badge: "bg-white text-[#b4475a]", lines: "%23b4475a" },
-  sky: { bg: "bg-[linear-gradient(140deg,#eef6ff,#d6e8fb_55%,#e3f3f6)]", badge: "bg-white text-accent", lines: "%23134a94" },
-  navy: { bg: "bg-[radial-gradient(70%_60%_at_85%_0%,rgb(47_111_216/0.35),transparent_70%),linear-gradient(160deg,#0a2a55,#071d3d)]", badge: "bg-white/10 text-highlight ring-1 ring-white/15", lines: "%23ffffff" },
+  sun: { bg: "bg-[linear-gradient(140deg,#fff8ec,#f6e4bf_55%,#fbefd8)]", badge: "bg-white text-emerald", lines: "%23b08a45" },
+  rose: { bg: "bg-[linear-gradient(140deg,#f3f1f8,#dcd7e8_55%,#ebe8f3)]", badge: "bg-white text-lavender-deep", lines: "%235e4f86" },
+  sky: { bg: "bg-[linear-gradient(140deg,#eef7f6,#cfe8e5_55%,#e4f2f0)]", badge: "bg-white text-accent", lines: "%232a736e" },
+  navy: { bg: "bg-[radial-gradient(70%_60%_at_85%_0%,rgb(76_166_160/0.35),transparent_70%),linear-gradient(160deg,#283d42,#1f3236)]", badge: "bg-white/10 text-highlight ring-1 ring-white/15", lines: "%23ffffff" },
 };
 
 /**

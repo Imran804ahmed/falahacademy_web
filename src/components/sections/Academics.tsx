@@ -45,7 +45,7 @@ export function Academics({ className }: { className?: string }) {
                         style={p.image.position ? { objectPosition: p.image.position } : undefined}
                         {...blurProps(p.image.src)}
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[rgb(7_29_61/0.5)] via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[rgb(31_50_54/0.5)] via-transparent to-transparent" />
                       <span className="absolute bottom-4 left-4 rounded-full bg-white/95 px-3.5 py-1.5 text-xs font-bold text-accent-strong shadow-soft">
                         {p.ages}
                       </span>

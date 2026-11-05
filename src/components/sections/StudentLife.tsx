@@ -67,7 +67,7 @@ export function StudentLife({ limit, className }: { limit?: number; className?: 
                 style={image.position ? { objectPosition: image.position } : undefined}
                 {...blurProps(image.src)}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[rgb(7_29_61/0.88)] via-[rgb(7_29_61/0.25)] to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[rgb(31_50_54/0.88)] via-[rgb(31_50_54/0.25)] to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6 sm:p-6">
                 <h3 className={cn("font-bold text-white", i === 0 ? "text-2xl sm:text-3xl" : "text-xl")}>{title}</h3>
                 <p

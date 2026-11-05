@@ -6,51 +6,60 @@
 /*
  * Falah Academy design system
  * ---------------------------------------------------------------
- * Palette taken from the logo (public/images/brand/logo-*.png):
- *   Primary    logo blue   #0d4485 (wordmark), used for headings, primary buttons
- *   Secondary  logo teal   #0b8d9d (book spine), icons and small accents (text: #0a6d7a)
- *   Highlight  logo green  #3cc6a0 (rising arrow), CTAs and highlights on navy
- *   Gradient   blue → teal → green, the sweep of the book-and-arrow mark
- *   Surfaces   off-white paper, white cards, deep logo-blue navy for dark bands
+ * Soft teal, warm cream and muted gold, with dark slate type:
+ *   Primary    soft teal    #4ca6a0 for icons, bars and fills; #2a736e for buttons,
+ *              links and teal text (5.6:1 on white; #4ca6a0 is only 2.9:1)
+ *   Headings   dark slate   #283d42, also the dark bands and footer
+ *   Body       charcoal     #52616b
+ *   Highlight  muted gold   #d8af64, CTAs on dark bands (slate text: 5.6:1);
+ *              #8a6421 for gold text on light surfaces
+ *   Lavender   #dcd7e8, a quiet extra accent for early-years cards
+ *   Surfaces   ivory page, warm cream bands, white cards
  */
 @theme {
   /* surfaces */
-  --color-bg: #f7f9fc;
+  --color-bg: #faf9f6;
   --color-bg-elevated: #ffffff;
-  --color-bg-tint: #eef3fa;
-  --color-bg-inverted: #071d3d;
-  --color-ink-2: #0a2a55;
-  --color-ink-3: #12396f;
+  --color-bg-tint: #fff8ec;
+  --color-bg-inverted: #1f3236;
+  --color-ink-2: #283d42;
+  --color-ink-3: #33504f;
 
   /* text */
-  --color-fg: #0b1a33;
-  --color-fg-muted: #4a5568;
-  --color-fg-inverted: #f7f9fc;
-  --color-fg-inverted-muted: #b4c0d4;
+  --color-fg: #283d42;
+  --color-fg-muted: #52616b;
+  --color-fg-inverted: #faf9f6;
+  --color-fg-inverted-muted: #bccacb;
 
   /* lines */
-  --color-border: #dfe6f0;
-  --color-border-inverted: #1f4677;
+  --color-border: #e9e4da;
+  --color-border-inverted: #3c5559;
 
-  /* primary: logo blue */
-  --color-accent: #134a94;
-  --color-accent-strong: #0d4485;
-  --color-accent-soft: #e7eef8;
+  /* primary: teal for actions; accent-strong is the dark slate heading colour */
+  --color-accent: #2a736e;
+  --color-accent-strong: #283d42;
+  --color-accent-soft: #e4f2f0;
   --color-accent-fg: #ffffff;
-  --color-royal: #2f6fd8; /* focus rings, links */
+  --color-teal: #4ca6a0; /* brand teal for icons, bars and decorative fills */
+  --color-royal: #2a736e; /* focus rings, links */
 
-  /* secondary: logo teal (the token keeps its historical name) */
-  --color-emerald: #0a6d7a; /* teal for text and icons: 6:1 on white */
-  --color-emerald-strong: #08596a;
-  --color-emerald-soft: #e1f4f3;
-  --color-emerald-light: #3cc6af; /* logo teal-green, for use on navy */
+  /* secondary: muted gold for labels and ticks (the token keeps its historical name) */
+  --color-emerald: #8a6421; /* gold text on light surfaces: 5.3:1 on white */
+  --color-emerald-strong: #75541a;
+  --color-emerald-soft: #fbf1dd;
+  --color-emerald-light: #e6c88e; /* gold for use on slate */
 
-  /* highlight: logo green */
-  --color-highlight: #3cc6a0;
-  --color-highlight-strong: #5ad4b0;
-  --color-highlight-soft: #def6ee;
-  --color-highlight-fg: #03302a;
-  --color-highlight-deep: #0a7a5e; /* green text on light surfaces: 5.3:1 */
+  /* highlight: muted gold */
+  --color-highlight: #d8af64;
+  --color-highlight-strong: #e4c27f;
+  --color-highlight-soft: #f8edd6;
+  --color-highlight-fg: #283d42;
+  --color-highlight-deep: #7e5a1b; /* gold text on light surfaces */
+
+  /* extra accent */
+  --color-lavender: #dcd7e8;
+  --color-lavender-soft: #f3f1f8;
+  --color-lavender-deep: #5e4f86;
 
   /* body: DM Sans; headings: Plus Jakarta Sans */
   --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
@@ -107,10 +116,10 @@
   --radius-xl: 1.5rem;
   --radius-section: clamp(2rem, 1.5rem + 2.2vw, 3rem);
 
-  /* depth: navy-tinted shadows */
-  --shadow-soft: 0 1px 2px rgb(7 29 61 / 0.04), 0 10px 28px -14px rgb(7 29 61 / 0.16);
-  --shadow-lift: 0 2px 4px rgb(7 29 61 / 0.05), 0 26px 50px -22px rgb(7 29 61 / 0.3);
-  --shadow-deep: 0 30px 80px -30px rgb(4 18 40 / 0.7);
+  /* depth: slate-tinted shadows */
+  --shadow-soft: 0 1px 2px rgb(31 50 54 / 0.04), 0 10px 28px -14px rgb(31 50 54 / 0.16);
+  --shadow-lift: 0 2px 4px rgb(31 50 54 / 0.05), 0 26px 50px -22px rgb(31 50 54 / 0.3);
+  --shadow-deep: 0 30px 80px -30px rgb(20 34 37 / 0.7);
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --duration-fast: 200ms; /* colour / focus changes */
@@ -222,8 +231,8 @@ body {
   -webkit-backdrop-filter: blur(16px) saturate(160%);
   backdrop-filter: blur(16px) saturate(160%);
   box-shadow:
-    0 1px 0 rgb(7 29 61 / 0.06),
-    0 12px 30px -20px rgb(7 29 61 / 0.35);
+    0 1px 0 rgb(31 50 54 / 0.06),
+    0 12px 30px -20px rgb(31 50 54 / 0.35);
 }
 
 /* nav link underline that grows from the centre on hover */
@@ -254,8 +263,8 @@ body {
 .menu-ink {
   color: var(--color-fg-inverted);
   background:
-    radial-gradient(50rem 26rem at 90% -10%, rgb(47 111 216 / 0.35), transparent 60%),
-    radial-gradient(36rem 24rem at 0% 110%, rgb(60 198 160 / 0.12), transparent 60%),
+    radial-gradient(50rem 26rem at 90% -10%, rgb(76 166 160 / 0.35), transparent 60%),
+    radial-gradient(36rem 24rem at 0% 110%, rgb(216 175 100 / 0.12), transparent 60%),
     linear-gradient(180deg, var(--color-bg-inverted), var(--color-ink-2));
 }
 
@@ -275,11 +284,11 @@ body {
 .scrim-hero {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgb(7 29 61 / 0.9) 0%, rgb(7 29 61 / 0.7) 40%, rgb(7 29 61 / 0.28) 75%, rgb(7 29 61 / 0.2) 100%);
+  background: linear-gradient(90deg, rgb(31 50 54 / 0.9) 0%, rgb(31 50 54 / 0.7) 40%, rgb(31 50 54 / 0.28) 75%, rgb(31 50 54 / 0.2) 100%);
 }
 @media (max-width: 47.99rem) {
   .scrim-hero {
-    background: linear-gradient(180deg, rgb(7 29 61 / 0.5) 0%, rgb(7 29 61 / 0.72) 50%, rgb(7 29 61 / 0.9) 100%);
+    background: linear-gradient(180deg, rgb(31 50 54 / 0.5) 0%, rgb(31 50 54 / 0.72) 50%, rgb(31 50 54 / 0.9) 100%);
   }
 }
 
@@ -288,11 +297,11 @@ body {
 .scrim-hero-photo {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgb(7 29 61 / 0.9) 0%, rgb(7 29 61 / 0.72) 26%, rgb(7 29 61 / 0.25) 46%, transparent 60%);
+  background: linear-gradient(90deg, rgb(31 50 54 / 0.9) 0%, rgb(31 50 54 / 0.72) 26%, rgb(31 50 54 / 0.25) 46%, transparent 60%);
 }
 @media (max-width: 63.99rem) {
   .scrim-hero-photo {
-    background: linear-gradient(180deg, rgb(7 29 61 / 0.45) 0%, rgb(7 29 61 / 0.6) 45%, rgb(7 29 61 / 0.88) 100%);
+    background: linear-gradient(180deg, rgb(31 50 54 / 0.45) 0%, rgb(31 50 54 / 0.6) 45%, rgb(31 50 54 / 0.88) 100%);
   }
 }
 
@@ -304,8 +313,8 @@ body {
   isolation: isolate;
   overflow: clip;
   background:
-    radial-gradient(60rem 30rem at 88% -10%, rgb(47 111 216 / 0.32), transparent 60%),
-    radial-gradient(40rem 26rem at 0% 110%, rgb(60 198 160 / 0.1), transparent 60%),
+    radial-gradient(60rem 30rem at 88% -10%, rgb(76 166 160 / 0.32), transparent 60%),
+    radial-gradient(40rem 26rem at 0% 110%, rgb(216 175 100 / 0.1), transparent 60%),
     linear-gradient(180deg, var(--color-bg-inverted), var(--color-ink-2));
   color: var(--color-fg-inverted);
 }
@@ -327,22 +336,22 @@ body {
   isolation: isolate;
   overflow: clip;
   background:
-    radial-gradient(50rem 30rem at 85% 0%, rgb(47 111 216 / 0.18), transparent 65%),
-    linear-gradient(180deg, #061934, #071d3d);
+    radial-gradient(50rem 30rem at 85% 0%, rgb(76 166 160 / 0.18), transparent 65%),
+    linear-gradient(180deg, #1a2a2e, #1f3236);
   color: var(--color-fg-inverted);
 }
 
 /* soft tinted band for alternating light sections */
 .surface-tint {
   background:
-    radial-gradient(46rem 24rem at 100% 0%, rgb(47 111 216 / 0.07), transparent 60%),
-    radial-gradient(40rem 22rem at 0% 100%, rgb(11 141 157 / 0.05), transparent 60%),
+    radial-gradient(46rem 24rem at 100% 0%, rgb(76 166 160 / 0.07), transparent 60%),
+    radial-gradient(40rem 22rem at 0% 100%, rgb(76 166 160 / 0.05), transparent 60%),
     var(--color-bg-tint);
 }
 
-/* the logo's teal → green sweep, tuned for text on navy */
+/* gold → soft teal sweep, tuned for text on the dark slate bands */
 .text-brand-gradient {
-  background: linear-gradient(100deg, #5bb8e6 0%, #3cc6af 50%, #8be5c4 100%);
+  background: linear-gradient(100deg, #e6c88e 0%, #d8af64 45%, #8fd0c9 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -388,7 +397,7 @@ body {
   width: 100%;
   min-width: 0;
   border-radius: var(--radius-md);
-  border: 1px solid #cfd7e4;
+  border: 1px solid #d9d2c4;
   background: var(--color-bg-elevated);
   padding: 0.75rem 1rem;
   font-size: 1rem;
@@ -397,15 +406,15 @@ body {
     border-color 0.2s ease,
     box-shadow 0.2s ease;
   &::placeholder {
-    color: rgb(74 85 104 / 0.7);
+    color: rgb(82 97 107 / 0.7);
   }
   &:hover {
-    border-color: #b5c1d4;
+    border-color: #c4bba9;
   }
   &:focus {
     outline: none;
     border-color: var(--color-royal);
-    box-shadow: 0 0 0 4px rgb(47 111 216 / 0.15);
+    box-shadow: 0 0 0 4px rgb(76 166 160 / 0.15);
   }
   &[aria-invalid="true"] {
     border-color: #c53030;

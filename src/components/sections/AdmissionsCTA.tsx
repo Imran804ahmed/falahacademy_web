@@ -14,7 +14,7 @@ export function AdmissionsCTA({
   body = "Discover a learning environment focused on academic excellence, Islamic values and personal development, in Playgroup, Nursery, Kindergarten and our Huffaz Education System.",
   primaryLabel = "Start Your Admission Journey",
   secondaryLabel = "Contact Us",
-  image = { src: "/images/events/graduation.jpg", position: "center 35%" },
+  image = { src: "/images/student-life/children-topi-celebration.jpg", position: "center 30%" },
   dim = 0.8,
 }: {
   title?: React.ReactNode;
@@ -33,7 +33,7 @@ export function AdmissionsCTA({
           <div aria-hidden="true" className="absolute inset-0 -z-10">
             <BackdropImage src={image.src} position={image.position} />
             <div className="absolute inset-0 bg-bg-inverted" style={{ opacity: dim }} />
-            <div className="absolute inset-0 bg-[radial-gradient(40rem_20rem_at_50%_0%,rgb(60_198_160/0.22),transparent_70%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(40rem_20rem_at_50%_0%,rgb(216_175_100/0.22),transparent_70%)]" />
           </div>
           <Reveal className="mx-auto max-w-3xl">
             <h2 className="text-balance text-display-md font-bold text-white">{title}</h2>

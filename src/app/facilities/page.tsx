@@ -17,7 +17,7 @@ export default function FacilitiesPage() {
         eyebrow="Facilities"
         title="A campus designed for learning"
         intro="Safe, modern and well-equipped spaces that support every part of a student's day, from the classroom and the lab to the library and the playing field."
-        image={{ src: "/images/facilities/computer-lab.jpg", position: "center 45%" }}
+        image={{ src: "/images/campus/play-area.jpg", position: "center 60%" }}
       />
       <Facilities />
       <AdmissionsCTA />

@@ -19,7 +19,7 @@ export function QuickContactBar() {
     <nav
       id="quick-contact"
       aria-label="Quick contact"
-      className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-white/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-10px_30px_-18px_rgb(7_29_61/0.4)] backdrop-blur md:hidden"
+      className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-white/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-10px_30px_-18px_rgb(31_50_54/0.4)] backdrop-blur md:hidden"
     >
       <ul className="mx-auto flex max-w-lg">
         {items.map(({ key, short, href, icon: Icon, external }) => {
