@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { AnimatePresence, m, useReducedMotion } from "motion/react";
 import { PaperPlaneTilt, WarningCircle } from "@phosphor-icons/react";
 import { siteConfig } from "@/content/site";
 import { cn } from "@/lib/cn";
@@ -10,7 +10,7 @@ type Status = "idle" | "submitting" | "success" | "error";
 type FieldName = "name" | "email" | "phone" | "subject" | "message";
 type Errors = Partial<Record<FieldName, string>>;
 
-const subjectOptions = ["Admission Inquiry", "General Inquiry", "Campus Visit", "School Transport", "Feedback", "Other"];
+const subjectOptions = ["Admission Inquiry", "Huffaz Admission Inquiry", "General Inquiry", "Campus Visit", "School Transport", "Feedback", "Other"];
 
 // base look comes from the `field` utility in globals.css (invalid state via aria-invalid)
 const fieldClasses = "field";
@@ -68,7 +68,7 @@ function Field({
       {children}
       <AnimatePresence initial={false}>
         {error && (
-          <motion.p
+          <m.p
             id={`contact-${name}-error`}
             role="alert"
             initial={{ opacity: 0, y: -4 }}
@@ -79,7 +79,7 @@ function Field({
           >
             <WarningCircle size={14} weight="fill" aria-hidden="true" />
             {error}
-          </motion.p>
+          </m.p>
         )}
       </AnimatePresence>
     </div>
@@ -187,7 +187,7 @@ export function ContactForm({ defaultSubject = "" }: { defaultSubject?: string }
 
   if (status === "success") {
     return (
-      <motion.div
+      <m.div
         role="status"
         initial={reduce ? false : { opacity: 0, scale: 0.97, y: 8 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -210,7 +210,7 @@ export function ContactForm({ defaultSubject = "" }: { defaultSubject?: string }
         >
           Send another message
         </button>
-      </motion.div>
+      </m.div>
     );
   }
 

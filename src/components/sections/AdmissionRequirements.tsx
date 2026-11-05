@@ -7,7 +7,7 @@ import { admissionRequirements } from "@/content/school";
 import { blurProps } from "@/lib/image-meta";
 
 export function AdmissionRequirements() {
-  const photo = "/images/programs/montessori.jpg";
+  const photo = "/images/admissions/new-student-white-topi.jpg";
   return (
     <section id="requirements" className="surface-tint py-section">
       <Container className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
@@ -36,7 +36,7 @@ export function AdmissionRequirements() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-xl shadow-lift">
             <Image
               src={photo}
-              alt="Young student in school uniform smiling in class"
+              alt="Smiling young boy in a white kurta and prayer cap"
               fill
               sizes="(min-width: 1280px) 520px, 40vw"
               className="object-cover object-[50%_15%]"

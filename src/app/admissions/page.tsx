@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/Button";
 export const metadata: Metadata = {
   title: "Admissions",
   description:
-    "Admissions at Falah Academy, Montessori to Intermediate: the admission process, required documents (B-Form, CNIC, school records) and how to apply.",
+    "Admissions at Falah Academy Karachi for Playgroup, Nursery, Kindergarten and the Huffaz Education System: the admission process, required documents and how to apply.",
   alternates: { canonical: "/admissions" },
 };
 
@@ -19,8 +19,8 @@ export default function AdmissionsPage() {
       <PageHeader
         eyebrow="Admissions"
         title="Start Your Child's Journey at Falah Academy"
-        intro="We welcome families who share our commitment to learning, character and community, for every class from Montessori to Intermediate. Here is everything you need to know."
-        image={{ src: "/images/admissions/new-student.jpg", position: "65% 30%" }}
+        intro="We welcome families who share our commitment to learning, character and community, for Playgroup, Nursery and Kindergarten and for Huffaz joining our Huffaz Education System. Here is everything you need to know."
+        image={{ src: "/images/admissions/smiling-students-hijab.jpg", position: "62% 35%" }}
       >
         <div className="enter-up mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4" style={{ animationDelay: "0.16s" }}>
           <Button href="#apply" variant="highlight">

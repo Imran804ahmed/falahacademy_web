@@ -1,4 +1,7 @@
 @import "tailwindcss";
+/* docs aren't markup: class names quoted in them would otherwise ship as CSS */
+@source not "../../.claude";
+@source not "../../README.md";
 
 /*
  * Falah Academy design system
@@ -277,6 +280,19 @@ body {
 @media (max-width: 47.99rem) {
   .scrim-hero {
     background: linear-gradient(180deg, rgb(7 29 61 / 0.5) 0%, rgb(7 29 61 / 0.72) 50%, rgb(7 29 61 / 0.9) 100%);
+  }
+}
+
+/* home hero photo: navy only behind the copy (left), clear over the children (right);
+   below lg the copy spans the full width, so the fade runs top to bottom instead */
+.scrim-hero-photo {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgb(7 29 61 / 0.9) 0%, rgb(7 29 61 / 0.72) 26%, rgb(7 29 61 / 0.25) 46%, transparent 60%);
+}
+@media (max-width: 63.99rem) {
+  .scrim-hero-photo {
+    background: linear-gradient(180deg, rgb(7 29 61 / 0.45) 0%, rgb(7 29 61 / 0.6) 45%, rgb(7 29 61 / 0.88) 100%);
   }
 }
 

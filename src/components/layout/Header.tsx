@@ -109,6 +109,7 @@ export function Header() {
               tone={onDark ? "light" : "dark"}
               swap
               priority
+              sizes="(min-width: 1280px) 157px, (min-width: 640px) 137px, 118px"
               className={cn("h-12 origin-left transition-transform duration-500 sm:h-14 xl:h-16", solid && "scale-[0.86]")}
             />
             <span className="sr-only">, home</span>

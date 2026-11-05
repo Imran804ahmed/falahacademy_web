@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/sections/PageHeader";
+import { ProgramCards } from "@/components/sections/ProgramCards";
 import { Academics } from "@/components/sections/Academics";
 import { Subjects } from "@/components/sections/Subjects";
 import { Services } from "@/components/sections/Services";
@@ -9,7 +10,7 @@ import { AdmissionsCTA } from "@/components/sections/AdmissionsCTA";
 export const metadata: Metadata = {
   title: "Academics",
   description:
-    "Academic programmes at Falah Academy from Montessori, Primary and Middle to Secondary (Matric) and Intermediate, with board exam preparation, plus tuition, O/A Level coaching, entry test preparation, career counseling and Huffaz classes in Karachi.",
+    "Programmes at Falah Academy Karachi: Playgroup, Nursery, Kindergarten and the Huffaz Education System, plus tuition, O/A Level coaching and entry test prep.",
   alternates: { canonical: "/academics" },
 };
 
@@ -19,10 +20,11 @@ export default function AcademicsPage() {
       <PageHeader
         eyebrow="Academics"
         title="Academic excellence at every stage"
-        intro="From Montessori to Intermediate: a structured, engaging curriculum that builds strong foundations, develops independent thinkers and prepares students for board examinations and beyond."
-        image={{ src: "/images/classrooms/chalkboard-maths.jpg", position: "70% 30%" }}
+        intro="Playgroup, Nursery and Kindergarten, plus a dedicated academic pathway for Huffaz: a structured, engaging curriculum that builds strong foundations, with higher classes planned for the years ahead."
+        image={{ src: "/images/classrooms/classroom-students-hijab.jpg", position: "60% 40%" }}
       />
-      <Academics />
+      <ProgramCards id="featured-programs" variant="academics" className="py-section" />
+      <Academics className="pb-section" />
       <Subjects />
       <Services />
       <TeachingApproach />

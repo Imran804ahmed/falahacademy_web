@@ -16,21 +16,21 @@ import { coreValues, history, mission, philosophy, principal, vision } from "@/c
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "About Falah Academy, a school in Pakistan offering education from Montessori to Intermediate: our story, vision, mission, values, faculty and a message from the Principal.",
+    "About Falah Academy, an Islamic school in Karachi: our story, vision, mission, values and faculty, and a message from the Principal.",
   alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {
-  const introImage = "/images/student-life/friends.jpg";
+  const introImage = "/images/about/students-with-textbooks.jpg";
   return (
     <>
       <PageHeader
         eyebrow="About Us"
         title="Educating minds, building character"
-        intro="Falah Academy is a community of dedicated teachers, families and students, from Montessori to Intermediate, working toward one goal: helping every child reach their full potential."
+        intro="Falah Academy is a community of dedicated teachers, families and students, from Playgroup and Kindergarten to our Huffaz Education System, working toward one goal: helping every child reach their full potential."
         image={{
-          src: "/images/programs/secondary.jpg",
-          position: "70% 35%",
+          src: "/images/about/islamic-school-classroom.jpg",
+          position: "60% 40%",
         }}
       />
 
@@ -53,7 +53,7 @@ export default function AboutPage() {
               <div className="relative aspect-[5/4] overflow-hidden rounded-xl shadow-lift">
                 <Image
                   src={introImage}
-                  alt="Smiling group of young students standing together"
+                  alt="Group of girls in light-blue hijabs holding their school textbooks"
                   fill
                   sizes="(min-width: 1024px) 40vw, 100vw"
                   className="object-cover"

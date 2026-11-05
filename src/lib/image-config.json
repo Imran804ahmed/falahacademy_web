@@ -23,6 +23,23 @@
     "/images/events/graduation.jpg",
     "/images/events/science-exhibition.jpg",
     "/images/faculty/teacher-guidance.jpg",
-    "/images/programs/primary.jpg"
+    "/images/programs/primary.jpg",
+    "/images/programs/middle.jpg",
+    "/images/hero/islamic-school-girls-reading.jpg",
+    "/images/huffaz/students-writing-classroom.jpg",
+    "/images/about/islamic-school-classroom.jpg",
+    "/images/admissions/smiling-students-hijab.jpg",
+    "/images/student-life/boys-topi-school-window.jpg",
+    "/images/classrooms/classroom-students-hijab.jpg",
+    "/images/student-life/schoolgirls-white-hijab-smiling.jpg",
+    "/images/hero/islamic-school-children-classroom.jpg",
+    "/images/admissions/falah-classroom-students.jpg"
+  ],
+  "og": [
+    "/images/hero/islamic-school-children-classroom.jpg",
+    "/images/student-life/cricket.jpg",
+    "/images/events/science-exhibition.jpg",
+    "/images/faculty/teacher-guidance.jpg",
+    "/images/events/graduation.jpg"
   ]
 }

@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { QuickContactBar } from "@/components/layout/QuickContactBar";
+import { MotionProvider } from "@/components/layout/MotionProvider";
 import { siteConfig } from "@/content/site";
 import { isFilled } from "@/lib/placeholder";
 
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: seo.title,
     description: seo.description,
-    images: [{ url: seo.ogImage, alt: "Smiling students in school uniform at their classroom desks" }],
+    images: [{ url: seo.ogImage, width: 1200, height: 630, alt: "Young children in white kurtas, prayer caps and a grey hijab learning together in a bright classroom" }],
     locale: "en_PK",
   },
   twitter: {
@@ -75,7 +76,15 @@ const jsonLd = {
   ...(isFilled(contact.phone) && { telephone: contact.phone }),
   ...(isFilled(contact.email) && { email: contact.email }),
   openingHours: "Mo-Fr 08:00-15:00",
-  educationalLevel: ["Montessori", "Primary", "Middle", "Secondary (Matric)", "Intermediate"],
+  educationalLevel: ["Playgroup", "Nursery", "Kindergarten", "Huffaz Education System"],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Educational programmes",
+    itemListElement: ["Playgroup", "Nursery", "Kindergarten", "Huffaz Education System"].map((name) => ({
+      "@type": "Offer",
+      itemOffered: { "@type": "Course", name },
+    })),
+  },
   sameAs: Object.values(siteConfig.social).filter(Boolean),
 };
 
@@ -102,13 +111,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           Skip to content
         </a>
-        <Header />
-        {/* clip (not hidden): side-entering reveals can't widen the page, and sticky columns keep working */}
-        <main id="main-content" className="flex-1 overflow-x-clip">
-          {children}
-        </main>
-        <Footer />
-        <QuickContactBar />
+        <MotionProvider>
+          <Header />
+          {/* clip (not hidden): side-entering reveals can't widen the page, and sticky columns keep working */}
+          <main id="main-content" className="flex-1 overflow-x-clip">
+            {children}
+          </main>
+          <Footer />
+          <QuickContactBar />
+        </MotionProvider>
       </body>
     </html>
   );

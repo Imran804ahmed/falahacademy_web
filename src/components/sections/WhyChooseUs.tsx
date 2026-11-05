@@ -21,10 +21,20 @@ export function WhyChooseUs({
       <Container>
         <SectionHeading centered eyebrow="Why Falah Academy" title="Why Choose Falah Academy?" body={body} />
         <RevealGroup
-          className={cn("mt-12 grid gap-5 sm:grid-cols-2 lg:mt-14 lg:gap-6", items.length === 4 ? "lg:grid-cols-4" : "lg:grid-cols-3")}
+          className={cn(
+            "mt-12 grid gap-5 sm:grid-cols-2 lg:mt-14 lg:gap-6",
+            items.length === 4 ? "lg:grid-cols-4" : items.length === 5 ? "lg:grid-cols-6" : "lg:grid-cols-3"
+          )}
         >
           {items.map((item, i) => (
-            <RevealItem key={item.title}>
+            // five items: three across, then two wider cards (on sm, the last card spans the row)
+            <RevealItem
+              key={item.title}
+              className={cn(
+                items.length === 5 && (i < 3 ? "lg:col-span-2" : "lg:col-span-3"),
+                items.length === 5 && i === 4 && "sm:col-span-2 lg:col-span-3"
+              )}
+            >
               <IconCard {...item} tone={tones[i % 3]} className={cn(items.length === 4 && "lg:p-7")} />
             </RevealItem>
           ))}

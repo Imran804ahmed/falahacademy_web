@@ -8,18 +8,35 @@ import { cn } from "@/lib/cn";
 /**
  * Numbered admission steps. A horizontal timeline on large screens (a rule draws
  * through the step markers), a vertical one on smaller screens. `withActions`
- * adds the apply / contact buttons for use outside the Admissions page.
+ * adds the apply / contact buttons for use outside the Admissions page. Pass `steps`
+ * (and headings) to reuse the timeline for another process, e.g. the Huffaz programme.
  */
-export function AdmissionSteps({ className, withActions }: { className?: string; withActions?: boolean }) {
-  const n = admissionSteps.length;
+export function AdmissionSteps({
+  className,
+  withActions,
+  id = "process",
+  steps = admissionSteps,
+  eyebrow = "Admissions",
+  title,
+  body = "Our admissions office will guide you at every stage, from your first question to your child's first day.",
+}: {
+  className?: string;
+  withActions?: boolean;
+  id?: string;
+  steps?: readonly { title: string; body: string }[];
+  eyebrow?: string;
+  title?: string;
+  body?: string;
+}) {
+  const n = steps.length;
   return (
-    <section id="process" className={className ?? "py-section"}>
+    <section id={id} className={className ?? "py-section"}>
       <Container>
         <SectionHeading
           centered
-          eyebrow="Admissions"
-          title={`${n === 4 ? "Four" : n} simple steps to joining us`}
-          body="Our admissions office will guide you at every stage, from your first question to your child's first day."
+          eyebrow={eyebrow}
+          title={title ?? `${n === 4 ? "Four" : n} simple steps to joining us`}
+          body={body}
         />
         <div className="relative mt-14">
           <div aria-hidden="true" className="absolute bottom-6 left-7 top-6 w-px bg-border lg:hidden" />
@@ -31,7 +48,7 @@ export function AdmissionSteps({ className, withActions }: { className?: string;
             stagger={0.1}
             className={cn("relative grid gap-6", n === 4 ? "lg:grid-cols-4" : "lg:grid-cols-5")}
           >
-            {admissionSteps.map((step, i) => (
+            {steps.map((step, i) => (
               <RevealItem as="li" key={step.title} className="flex gap-6 lg:flex-col lg:items-center lg:text-center">
                 <span className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-4 border-bg bg-bg-inverted font-display text-lg font-semibold text-highlight shadow-soft">
                   {String(i + 1).padStart(2, "0")}

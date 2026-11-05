@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "motion/react";
+import { m, useReducedMotion } from "motion/react";
 import { dist, dur, ease, motionConfig } from "@/lib/motion";
 
 /** Direction an element travels from as it enters. Varying it keeps sections from feeling templated. */
@@ -45,25 +45,25 @@ export function Reveal({
     // The outer element is what's observed: a fully clipped target never
     // registers as intersecting, so the clip lives on the inner element.
     return (
-      <motion.div
+      <m.div
         initial={reduce ? false : "hidden"}
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
         className={className}
       >
-        <motion.div
+        <m.div
           variants={clipVariants}
           transition={{ duration: reduce ? 0 : dur(1.1), delay, ease }}
           className="relative h-full w-full"
         >
           {children}
-        </motion.div>
-      </motion.div>
+        </m.div>
+      </m.div>
     );
   }
 
   return (
-    <motion.div
+    <m.div
       initial={reduce ? false : offset(from, y)}
       whileInView={{ opacity: 1, x: 0, y: 0, scale: 1 }}
       viewport={{ once: true, amount: 0.3 }}
@@ -71,7 +71,7 @@ export function Reveal({
       className={className}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -80,7 +80,7 @@ export function GrowLine({ className, vertical, delay = 0.15 }: { className?: st
   const reduce = useReducedMotion();
   const axis = vertical ? "scaleY" : "scaleX";
   return (
-    <motion.div
+    <m.div
       aria-hidden="true"
       initial={reduce ? false : { [axis]: 0 }}
       whileInView={{ [axis]: 1 }}
@@ -92,7 +92,7 @@ export function GrowLine({ className, vertical, delay = 0.15 }: { className?: st
   );
 }
 
-const groupTags = { div: motion.div, ul: motion.ul, ol: motion.ol };
+const groupTags = { div: m.div, ul: m.ul, ol: m.ol };
 
 export function RevealGroup({
   children,
@@ -130,15 +130,19 @@ export function RevealItem({
   className,
   y = 20,
   as = "div",
+  id,
 }: {
   children: React.ReactNode;
   className?: string;
   y?: number;
   as?: "div" | "li";
+  /** anchor target, e.g. for `/academics#nursery` */
+  id?: string;
 }) {
-  const Tag = as === "li" ? motion.li : motion.div;
+  const Tag = as === "li" ? m.li : m.div;
   return (
     <Tag
+      id={id}
       variants={{
         hidden: { opacity: 0, y: dist(y) },
         show: { opacity: 1, y: 0, transition: { duration: dur(0.55), ease } },

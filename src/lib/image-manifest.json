@@ -1,9 +1,51 @@
 {
+  "/images/about/girls-hijab-classroom.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "d9b41042e1bea3cf",
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoKAAcAA4BaJbACdADbTF8UJAAA/eNKvhGgdddTC3xdlRpNhh8t+g5OYk9FG+PDZX8V3uzaP310uQKOnM4jFJaNAhPA/8wA"
+  },
+  "/images/about/islamic-classroom-learning.jpg": {
+    "width": 889,
+    "height": 768,
+    "hash": "1f1c275fb4d5e333",
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoKAAkAA4BaJYgCdADLruAXAAD+1xiaV6Oc+vrjaZx+WSdwCK0DuhQqlliE6mILaAPzrzCY6nG5e38qcy3nbNJ4wigAAA=="
+  },
+  "/images/about/islamic-school-classroom.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "f01910ed058a2164",
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACQAQCdASoKAAcAA4BaJQAAUvZnwwAA/sciAkWqRVF/m8YiY/gGf1d1/audakJXS+ETCgJqfe3R7jc95QAAAA=="
+  },
+  "/images/about/students-with-textbooks.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "e6d90b0349228fde",
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoKAAcAA4BaJagCdEf/gYvNOPfgAP70nVFvy5ChriL6Vv2wAWFTBVHVquo+JGVQ4GcAJBZxWbixIAWYIK0yAAAA"
+  },
+  "/images/admissions/falah-classroom-students.jpg": {
+    "width": 1380,
+    "height": 752,
+    "hash": "34b08e9acccd699c",
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoKAAUAA4BaJYgCdADZlgtAAP5b8UTZNUNPVt1bccQx/B9FzVkWJX9btrVYpuXq30u4uWoLAAA="
+  },
+  "/images/admissions/new-student-white-topi.jpg": {
+    "width": 2400,
+    "height": 3597,
+    "hash": "6f7f2f0e91792dc8",
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoKAA8AA4BaJQBOgCHRsrVAAP72CCL+Af02Uj4BehbNCIzTjPhLeNae0I/F3jr559zO9WmBSTLu59gP4AA="
+  },
   "/images/admissions/new-student.jpg": {
     "width": 2400,
     "height": 3600,
     "hash": "b12bc8c7f80911ac",
     "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoKAA8AA4BaJbACdAEQ+oTGAAAA/vBMWukrF2cl8q4Ui3IDU7gtvLODMmzQ1VHqi0lHuLajmoe0v6Y7O8bNkpZULF1+z73DmxSQU6kjlaJlZqCWPZt1cUQAAAA="
+  },
+  "/images/admissions/smiling-students-hijab.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "30f0ee77977075f3",
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoKAAcAA4BaJYgCdADQ8SOHUAD5cdJ+TyKH3P6DGYQOa/UjVHcAFYTRg2GUWY6OFx8NRgJNAOMwJhEcAAA="
   },
   "/images/brand/logo-compact-light.png": {
     "width": 826,
@@ -46,6 +88,12 @@
     "height": 1067,
     "hash": "25c27e18bafa566f",
     "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoKAAcAA4BaJYwAAlxSyjuBAAD+0ciyrigxQt2w6RTTRxjSs44HFTJ7GwAAAA=="
+  },
+  "/images/classrooms/classroom-students-hijab.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "2fd86a357f1854e7",
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoKAAcAA4BaJQBOgCICaFCwZMgA/qob1fmmxjqsZcjIJXXh65ea/WLvNqsMx06byAGBVu38gBI84aj0cAF+aE/fwAAAAA=="
   },
   "/images/classrooms/early-learning.jpg": {
     "width": 2400,
@@ -125,11 +173,47 @@
     "hash": "ff1497761cfd47e1",
     "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoKAAcAA4BaJZQAAuyOLnTRwAD8+93352Rodkrl7oMA9p22hVo9fjaSLm7dXv9/Q6u+UJnxAazENR6DxAgAAA=="
   },
+  "/images/hero/islamic-school-children-classroom.jpg": {
+    "width": 1376,
+    "height": 768,
+    "hash": "6eaeea19d70a5e49",
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoKAAYAA4BaJYgCdAEQOBQhmMPAAP5Vev5Ij77WvhmmWCr/kRFaKdguRNKVWdatStDAZmNSwvxawnamXN4kgAAA"
+  },
+  "/images/hero/islamic-school-girls-reading.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "545feb49b507e6a3",
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoKAAcAA4BaJbACdAEWoPbUOZIAAP40ConaCyEjtiy10MoIS7QRBpnkSBJ3YIdZkBV4StCWZJ2yyCbkcXplDFemS+6AAA=="
+  },
   "/images/hero/students-classroom.jpg": {
     "width": 2400,
     "height": 1600,
     "hash": "30672b0b32afcab6",
     "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoKAAcAA4BaJQBOgB+Fz30d7QxgAP5ktmMEibe1jMMEZa/9t/87aeQLIZPwsn3SRPzKOa+iyagpnl0F1dOKIc6hm3AAAA=="
+  },
+  "/images/huffaz/hafiz-students-white-uniform.jpg": {
+    "width": 2400,
+    "height": 1350,
+    "hash": "8b464ce812be4b23",
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoKAAYAA4BaJQBOgBttSs9u4AD+8j2aEufkL6uTd57FGASWOPyMPpxyzCAbo7PMhNTpvAiAAAA="
+  },
+  "/images/huffaz/huffaz-class-with-teacher.jpg": {
+    "width": 1380,
+    "height": 752,
+    "hash": "56408ad3f99fad20",
+    "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoKAAUAA4BaJQBOgBuZj7gAAP387HKT7iCSv06bOsQeUiUrdcVBk5j8lFXJ7qQAAAA="
+  },
+  "/images/huffaz/student-writing-exam.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "aee25bc6c4bafeff",
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoKAAcAA4BaJQBOgB5vw6hwAAD+oXFYAPbEZBuCG6tyrORwD6EbT7E6nf6bcQ6Y7PUtfhjTDEHGR0PJ5BVjYgAA"
+  },
+  "/images/huffaz/students-writing-classroom.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "1ee5a52279d1f090",
+    "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoKAAcAA4BaJbACdADcVsCZTQAA/oObdnz/GFlHLk6erO5FL+4PJa6P6IH3wBDiY5LIppRrgDrU/gcO0pjecjbwg3DsgXVWjq54xtuMAAA="
   },
   "/images/programs/college-student.jpg": {
     "width": 2400,
@@ -137,11 +221,53 @@
     "hash": "4d88316ce133d425",
     "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoKAAcAA4BaJZACdADZVuS4AOH04W7ge0g1BGD7E46ImlAkK11IiWqawLRdM3j566MxG32oXEJlq/GToAA="
   },
+  "/images/programs/early-years-girl-white-hijab.jpg": {
+    "width": 2400,
+    "height": 3600,
+    "hash": "97eeb2db60483ab1",
+    "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAACwAQCdASoKAA8AA4BaJZQCdACcvFAAAP7xuf22C1PyHIdHZUgzS8W5thnMC/4SueBV0xv2wMWn8Mr6bQTccnQ8Yv75szOBN3XtTZZvp4mZlEczRklpwrNFnJqSyRPQE1kKmwrXAAA="
+  },
+  "/images/programs/huffaz-islamic-classroom.jpg": {
+    "width": 1408,
+    "height": 768,
+    "hash": "b844987714198c93",
+    "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoKAAUAA4BaJYgCdAD0cUnAAP387G4HpHPw+K1Z58Bl8PhJE7lXCNRIE2rCS5PgAAA="
+  },
+  "/images/programs/huffaz-student-topi-classroom.jpg": {
+    "width": 2400,
+    "height": 3200,
+    "hash": "17f8c40e92618ae8",
+    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoKAA0AA4BaJbACdADdqnqDJ8gAAP4v0arCN5RrlF/9Hflna/nKbDQ+Ud8/awl/WUsLxAdrzryhlFZOGFOv1V5fJMtvgowAAAA="
+  },
+  "/images/programs/intermediate-students-classroom.jpg": {
+    "width": 2400,
+    "height": 3200,
+    "hash": "21c7016964a4def4",
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoKAA0AA4BaJYwCdADcP8l52ADONLqDpJ4D7uJFh95UiLsIePHNzW/hlldWsS4PgaerE8blg2EQJTEYohTwqAAA"
+  },
   "/images/programs/intermediate.jpg": {
     "width": 2400,
     "height": 1600,
     "hash": "2bba73fb6ac22a87",
     "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoKAAcAA4BaJYwCdAEDfDPYwhAA9ol5dxmZ/xSmroUsmLs/R6bpj9yG3c2/8EutFqzE55ULOZYoAlg1Oc+DiP0Hez8oPEWv2ZGAAA=="
+  },
+  "/images/programs/kindergarten-girl-hijab-reading.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "a7349c78d7b39c3c",
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoKAAcAA4BaJbACdADbRRNAAAD+xGZ3ic/vO9T6u0ob77TqWZXMQMiYU4ZQmlouejThNF3UV08/UrgAAAA="
+  },
+  "/images/programs/kindergarten-islamic-classroom.jpg": {
+    "width": 1408,
+    "height": 768,
+    "hash": "bd893af18f707a04",
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoKAAUAA4BaJZACdAELXPb6QAD9/SGHFo2i57st6fwnoiOwdYRzBGAr9yGSKyCYdG1UVMp8CmdrVAAA"
+  },
+  "/images/programs/middle-student-writing-exam.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "f0ca7abda94e3b21",
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoKAAcAA4BaJQBOgCPgbvkjocAA/oaulrDMvMdH/TCaJOLpImA3Z47er2ahz5K6asLrUmwFhmFZ2TykwAA="
   },
   "/images/programs/middle.jpg": {
     "width": 2400,
@@ -155,11 +281,41 @@
     "hash": "02f47f59f12eac66",
     "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoKAAcAA4BaJQBOgCFsn6amIAD+moPoxPEufOLQ15puzRYO2gPlrz3ZRonFTWZeYD24Y+wFJC+Ptwag9kiSsHFSAAA="
   },
+  "/images/programs/nursery-girl-hijab-writing.jpg": {
+    "width": 2400,
+    "height": 1590,
+    "hash": "ae0fa841fa73aa06",
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoKAAcAA4BaJbACdAELf18/geAA9okNranEEMXQMAzGtaKd3Jo+Gn6hGyT7DluN8Hg0/Fnop10JogAA"
+  },
+  "/images/programs/nursery-islamic-classroom.jpg": {
+    "width": 1376,
+    "height": 768,
+    "hash": "c8dfc1127d6f944b",
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoKAAYAA4BaJQBOgB5+NPKwAAD+ZocU+fh9pq6IfHzFN74n74mZoObKZEYH4vSBjg6S6W8ZRT3kAAAA"
+  },
+  "/images/programs/playgroup-islamic-classroom.jpg": {
+    "width": 1376,
+    "height": 768,
+    "hash": "0986e289df784781",
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoKAAYAA4BaJZACdAEO3//4jgAA/sYDRvbL17j8ojyc/wQ8UaX57cTaeax0a7DCYORMmaTBwAA="
+  },
+  "/images/programs/primary-girls-cream-hijab.jpg": {
+    "width": 2400,
+    "height": 1350,
+    "hash": "da6b1c76703b7025",
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoKAAYAA4BaJQBOgB9i17USQwAA/gtlRzxvynX+np+mQq6+NxPCnMS33H8Ler7c8Lm/WKp9XKgr4oqk/rGSQAAA"
+  },
   "/images/programs/primary.jpg": {
     "width": 2400,
     "height": 1450,
     "hash": "b3a23254e3b0bd17",
     "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoKAAYAA4BaJQBdgCIZsrUdkAAA/QHk0pF4kgd827A3Nae2YS8IqvQHe0itHYv7b2hLvIbMkosRsSUAknFQAWsAAAA="
+  },
+  "/images/programs/secondary-student-white-hijab-writing.jpg": {
+    "width": 2400,
+    "height": 1589,
+    "hash": "24609ee0c1b4c69b",
+    "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoKAAcAA4BaJZwAAupXXiOe4AD+3rW7RSDxJwy4IVUGfatOp6Tvbd29AAA="
   },
   "/images/programs/secondary.jpg": {
     "width": 2400,
@@ -185,6 +341,18 @@
     "hash": "d90e0212afa1da1c",
     "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoKAA0AA4BaJZwAAxech/KAAP71Pna4YbNHCZjK2UNyk0bPbkE2TPnZRp3RzV1kofL3AyNO6X9uDLgQAAA="
   },
+  "/images/student-life/boys-topi-school-window.jpg": {
+    "width": 2400,
+    "height": 1750,
+    "hash": "52bb319e196de3a1",
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoKAAcAA4BaJQBOgCHgN3JSnwAA/oLdcaDda3IXrCinnuG1GSobzIoQmOLXkVyMNGWgk8yPAHnYAA=="
+  },
+  "/images/student-life/children-topi-celebration.jpg": {
+    "width": 2400,
+    "height": 1920,
+    "hash": "592dee51d6194666",
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoKAAgAA4BaJZACdADdh2Dhf8AAyTXjqnu2aLEb/6Oe6ips3s6TFCP8CyrpsFVmvzE5AEpzfdZlYRVhmToMRhF8Gh2AAA=="
+  },
   "/images/student-life/cricket.jpg": {
     "width": 2400,
     "height": 1350,
@@ -196,6 +364,12 @@
     "height": 935,
     "hash": "d31e24d6c69dfa69",
     "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoKAAYAA4BaJbACdAD8Im1zgAD+ZBOKiV3Am0oqI8LTMcgn///yFS299sbhfzD6HWHGgAAA"
+  },
+  "/images/student-life/friends-white-hijab.jpg": {
+    "width": 2400,
+    "height": 3623,
+    "hash": "14b28057bdd0cf68",
+    "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoKAA8AA4BaJQBOgMWq2Hg7nkwAAP7m0tHN66/oPEQuzUG1enYGH+kawVde6yvV1qolMu/pkUoVZt++k7iZb4jwJ9ASxuzMxmJotvNFhr+fc05wIDa6pWjB8JnvoRmAAAA="
   },
   "/images/student-life/friends.jpg": {
     "width": 1600,
@@ -220,5 +394,23 @@
     "height": 1067,
     "hash": "6f730cd2c23683d9",
     "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoKAAcAA4BaJZACdADcH5gqIADOOEexseAnT3Q+KN2MTud45f0GU8otyfgAB6oUfw4YhszfREjjGIqvAAA="
+  },
+  "/images/student-life/schoolgirls-white-hijab-smiling.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "hash": "c9249b24f3caeea0",
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoKAAcAA4BaJYgCdADbggWBiAD9mIm1O+LImJYmGx1g6cdX02L3S+Coza8xs/UPygUtrH/s/wgVKDDh0tkpG3iEgAAAAA=="
+  },
+  "/images/student-life/schoolgirls-white-hijab-walking.jpg": {
+    "width": 2400,
+    "height": 3000,
+    "hash": "1ebef2dfc2dcfe3d",
+    "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoKAA0AA4BaJZgCdAEWuKhCi5YAAP6DwWpMM6DW77UXzBcDJW5GTOxLPH+fjoIumKCLPw8yujA37nx7xZUKaPFURDPO9uaennKe9s78X3qlMqusoMsAzY2AAAA="
+  },
+  "/images/student-life/student-white-kurta-topi-book.jpg": {
+    "width": 2400,
+    "height": 3200,
+    "hash": "fb9162b4fd37a60b",
+    "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoKAA0AA4BaJQBOgBu1GSNiIQAA+jh4hmBCxg4l+Ww1/KmhqboICzEkBd4SXvnWbduNqbH7xSeu2b470uPamVDrgFd7EduDGgVAAAAA"
   }
 }

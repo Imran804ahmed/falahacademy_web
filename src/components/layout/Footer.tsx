@@ -11,7 +11,6 @@ import {
   YoutubeLogo,
 } from "@phosphor-icons/react/dist/ssr";
 import { siteConfig } from "@/content/site";
-import { programs } from "@/content/school";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
@@ -71,7 +70,7 @@ export function Footer() {
               {siteConfig.tagline}
             </p>
             <p className="mt-1.5 text-sm text-fg-inverted-muted">
-              Montessori to Intermediate · School office: {contact.hours.days}, {contact.hours.time}
+              Playgroup · Nursery · KG · Huffaz Education · School office: {contact.hours.days}, {contact.hours.time}
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">
@@ -121,7 +120,12 @@ export function Footer() {
           <FooterColumn title="Explore" links={siteConfig.footer.explore} />
           <FooterColumn
             title="Academics"
-            links={programs.map((p) => ({ label: p.short, href: `/academics#${p.slug}` }))}
+            links={[
+              { label: "Playgroup", href: "/academics#playgroup" },
+              { label: "Nursery", href: "/academics#nursery" },
+              { label: "Kindergarten", href: "/academics#kindergarten" },
+              { label: "Huffaz Education", href: "/huffaz-education" },
+            ]}
           />
           <FooterColumn title="Admissions" links={siteConfig.footer.admissions} />
 

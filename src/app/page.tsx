@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/sections/Hero";
+import { ProgramCards } from "@/components/sections/ProgramCards";
 import { AboutPreview } from "@/components/sections/AboutPreview";
-import { Journey } from "@/components/sections/Journey";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
-import { AdmissionSteps } from "@/components/sections/AdmissionSteps";
+import { HuffazSpotlight } from "@/components/sections/HuffazSpotlight";
+import { Journey } from "@/components/sections/Journey";
+import { AdmissionsCTA } from "@/components/sections/AdmissionsCTA";
 import { GalleryPreview } from "@/components/sections/GalleryPreview";
 import { HomeContact } from "@/components/sections/HomeContact";
-import { trustIndicators } from "@/content/school";
+import { homeReasons } from "@/content/school";
 import { siteConfig } from "@/content/site";
 
 export const metadata: Metadata = {
@@ -15,23 +17,38 @@ export const metadata: Metadata = {
 };
 
 /*
- * Home answers a parent's five questions, briefly, in order: who is Falah Academy
- * (hero, about), which classes it teaches (programs), why choose it, how admissions
- * work, and how to get in touch. Detail lives on the inner pages: faculty and values
- * on /about, facilities on /facilities, activities on /student-life, news on /news-events.
+ * Home answers a parent's questions, briefly, in order: who is Falah Academy (hero),
+ * which programmes it offers (early years and the Huffaz Education System), what it
+ * stands for (about, why choose us), the Huffaz pathway in detail, the school journey
+ * (current classes and the stages planned next), and how to apply or get in touch. Detail lives on the inner
+ * pages: faculty and values on /about, every stage on /academics, the Huffaz programme
+ * on /huffaz-education, the admission process on /admissions.
  */
 export default function Home() {
   return (
     <>
       <Hero />
+      <ProgramCards />
       <AboutPreview />
-      <Journey className="surface-tint py-section" />
       <WhyChooseUs
-        className="py-section"
-        items={trustIndicators}
-        body="A balanced education with strong academics, sound character and close care for every child."
+        className="surface-tint py-section"
+        items={homeReasons}
+        body="Quality education, Islamic values and close care for every child, from the first day of Playgroup to the Huffaz pathway towards Matric."
       />
-      <AdmissionSteps className="surface-tint py-section" withActions />
+      <HuffazSpotlight />
+      <Journey className="py-section" />
+      <AdmissionsCTA
+        title={
+          <>
+            Begin Your Child&apos;s <span className="text-brand-gradient">Learning Journey</span> With Us
+          </>
+        }
+        body="Discover the right educational pathway for your child at Falah Academy. Explore our early childhood programs and specialised Huffaz Education System."
+        primaryLabel="Apply Now"
+        secondaryLabel="Contact Admissions"
+        image={{ src: "/images/admissions/falah-classroom-students.jpg", position: "center 45%" }}
+        dim={0.62}
+      />
       <GalleryPreview />
       <HomeContact />
     </>

@@ -26,7 +26,7 @@ export function Eyebrow({
   return (
     <p
       className={cn(
-        // long labels ("Intermediate · Grades 11 – 12") may wrap on phones: keep the lines apart and balanced
+        // long labels ("Montessori · Playgroup – KG") may wrap on phones: keep the lines apart and balanced
         "inline-flex max-w-full items-center gap-2 rounded-full px-4 py-1.5 label leading-[1.4] text-balance ring-1 ring-inset",
         t.pill,
         centered && "mx-auto",

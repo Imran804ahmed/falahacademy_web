@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import Image from "next/image";
-import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
+import { m, useReducedMotion, useScroll, useTransform } from "motion/react";
 import { cn } from "@/lib/cn";
 
 /**
@@ -32,7 +32,7 @@ export function ParallaxImage({
 
   return (
     <div ref={ref} className={cn("relative overflow-hidden", className)}>
-      <motion.div
+      <m.div
         style={reduce ? undefined : { y, scale: 1.16 }}
         className="absolute inset-0 will-change-transform"
       >
@@ -45,7 +45,7 @@ export function ParallaxImage({
           {...(blurDataURL && { placeholder: "blur", blurDataURL })}
           className="object-cover"
         />
-      </motion.div>
+      </m.div>
     </div>
   );
 }

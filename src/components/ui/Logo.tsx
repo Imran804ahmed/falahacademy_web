@@ -33,24 +33,30 @@ export function Logo({
   tone = "dark",
   swap = false,
   priority = false,
+  sizes = "157px",
   className,
 }: {
   tone?: "light" | "dark";
   swap?: boolean;
   /** above the fold: load eagerly */
   priority?: boolean;
+  /** rendered width(s), so phones get a smaller file than the 157px maximum needs */
+  sizes?: string;
   className?: string;
 }) {
   const light = "/images/brand/logo-compact-light.png";
   const dark = "/images/brand/logo-compact.png";
-  // displayed up to 64px tall (~157px wide); width/height drive the 1x/2x srcset
+  // displayed up to 64px tall (~157px wide); width/height set the aspect ratio, `sizes` the srcset
   const img = (src: string, visible: boolean) => (
     <Image
       src={src}
       alt={visible ? siteConfig.name : ""}
       width={157}
       height={64}
+      sizes={sizes}
       {...(priority && { loading: "eager" as const })}
+      // the hidden cross-fade copy still loads, but doesn't take a preload slot from the LCP photo
+      {...(!visible && { fetchPriority: "low" as const })}
       className={cn(
         "h-full w-auto",
         swap && "absolute inset-0 transition-opacity duration-300",

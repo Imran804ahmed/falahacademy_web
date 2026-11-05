@@ -10,7 +10,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { news } from "@/content/school";
 import { siteConfig } from "@/content/site";
-import { blurProps } from "@/lib/image-meta";
+import { blurProps, ogImage } from "@/lib/image-meta";
 import { formatDate } from "@/lib/date";
 
 type RouteParams = { slug: string };
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<RouteParams
     title: item.title,
     description: item.excerpt,
     alternates: { canonical: `/news-events/${item.slug}` },
-    openGraph: { type: "article", title: item.title, description: item.excerpt, images: [item.image.src] },
+    openGraph: { type: "article", title: item.title, description: item.excerpt, images: [{ ...ogImage(item.image.src), alt: item.image.alt }] },
   };
 }
 
@@ -43,7 +43,7 @@ export default async function NewsItemPage({ params }: { params: Promise<RoutePa
     name: item.title,
     headline: item.title,
     description: item.excerpt,
-    image: `${siteConfig.baseUrl}${item.image.src}`,
+    image: `${siteConfig.baseUrl}${ogImage(item.image.src).url}`,
     ...(item.category === "Event"
       ? { startDate: item.date, location: { "@type": "Place", name: siteConfig.name, address: siteConfig.contact.address } }
       : { datePublished: item.date }),

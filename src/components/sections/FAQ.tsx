@@ -8,19 +8,29 @@ import { faqs } from "@/content/school";
  * FAQ accordion built on native <details>/<summary>: keyboard and screen-reader
  * accessible with no JavaScript, and searchable with the browser's find-in-page.
  */
-export function FAQ({ className }: { className?: string }) {
+export function FAQ({
+  className,
+  id = "faq",
+  items = faqs,
+  body = "Answers to the questions parents ask us most often. Can't find what you're looking for? Our office is happy to help.",
+}: {
+  className?: string;
+  id?: string;
+  items?: readonly { q: string; a: string }[];
+  body?: string;
+}) {
   return (
-    <section id="faq" className={className ?? "py-section"}>
+    <section id={id} className={className ?? "py-section"}>
       <Container className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
         <SectionHeading
           eyebrow="FAQs"
           title="Frequently asked questions"
-          body="Answers to the questions parents ask us most often. Can't find what you're looking for? Our office is happy to help."
+          body={body}
           className="lg:sticky lg:top-[calc(var(--header-h)+2rem)] lg:self-start"
         />
         <Reveal delay={0.06}>
           <div className="space-y-3">
-            {faqs.map(({ q, a }, i) => (
+            {items.map(({ q, a }, i) => (
               <details
                 key={q}
                 name="faq"

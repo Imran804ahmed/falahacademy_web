@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { AnimatePresence, m, useReducedMotion } from "motion/react";
 import { ArrowRight, Clock, GraduationCap } from "@phosphor-icons/react";
 import { siteConfig } from "@/content/site";
 import type { ContactAction } from "@/lib/contact-actions";
@@ -33,7 +33,7 @@ export function MobileMenu({
   return (
     <AnimatePresence>
       {open && (
-        <motion.div
+        <m.div
           id="mobile-menu"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -41,7 +41,7 @@ export function MobileMenu({
           transition={{ duration: 0.2 }}
           className="menu-ink pointer-events-auto fixed inset-x-0 bottom-0 top-[var(--header-h)] overflow-y-auto overscroll-contain lg:hidden"
         >
-          <motion.nav
+          <m.nav
             aria-label="Mobile"
             className="mx-auto flex min-h-full max-w-2xl flex-col px-gutter pb-[max(2rem,env(safe-area-inset-bottom))] pt-4 sm:px-8"
             initial={reduce ? false : "hidden"}
@@ -52,7 +52,7 @@ export function MobileMenu({
               {siteConfig.pages.map((item) => {
                 const active = isActive(pathname, item.href);
                 return (
-                  <motion.li key={item.href} variants={menuItem} className="border-b border-white/[0.08]">
+                  <m.li key={item.href} variants={menuItem} className="border-b border-white/[0.08]">
                     <Link
                       href={item.href}
                       onClick={onClose}
@@ -76,12 +76,12 @@ export function MobileMenu({
                         )}
                       />
                     </Link>
-                  </motion.li>
+                  </m.li>
                 );
               })}
             </ul>
 
-            <motion.div variants={menuItem} className="mt-auto space-y-4 pt-8">
+            <m.div variants={menuItem} className="mt-auto space-y-4 pt-8">
               <Button
                 href={siteConfig.applyHref}
                 variant="highlight"
@@ -110,9 +110,9 @@ export function MobileMenu({
                 <Clock size={16} className="text-highlight" aria-hidden="true" />
                 School office: {contact.hours.days}, {contact.hours.time}
               </p>
-            </motion.div>
-          </motion.nav>
-        </motion.div>
+            </m.div>
+          </m.nav>
+        </m.div>
       )}
     </AnimatePresence>
   );

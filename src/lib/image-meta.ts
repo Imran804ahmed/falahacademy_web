@@ -1,5 +1,6 @@
 import "server-only";
 import manifest from "./image-manifest.json";
+import imageConfig from "./image-config.json";
 
 type Entry = { width: number; height: number; blurDataURL: string };
 const entries: Record<string, Entry | undefined> = manifest;
@@ -23,4 +24,13 @@ export function imageSize(src: string) {
 /** Attach each photo's blur placeholder before handing a list to a client component. */
 export function withBlur<T extends { src: string }>(photos: T[]): (T & { blurDataURL?: string })[] {
   return photos.map((p) => ({ ...p, blurDataURL: entries[p.src]?.blurDataURL }));
+}
+
+/**
+ * Open Graph image for a /images source: the 1200x630 JPEG card generated for sources listed
+ * under "og" in image-config.json (small enough for WhatsApp previews), else the original.
+ */
+export function ogImage(src: string) {
+  if (!imageConfig.og.includes(src)) return { url: src };
+  return { url: src.replace(/^\/images\/(.+)\.\w+$/, "/img-opt/$1-og.jpg"), width: 1200, height: 630 };
 }
