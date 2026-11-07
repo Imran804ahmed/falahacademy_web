@@ -14,7 +14,7 @@ export function AdmissionsCTA({
   body = "Discover a learning environment focused on academic excellence, Islamic values and personal development, in Playgroup, Nursery, Kindergarten and our Huffaz Education System.",
   primaryLabel = "Start Your Admission Journey",
   secondaryLabel = "Contact Us",
-  image = { src: "/images/student-life/children-topi-celebration.jpg", position: "center 30%" },
+  image = { src: "/images/admissions/parents-teacher-classroom.jpg", position: "center 40%" },
   dim = 0.8,
 }: {
   title?: React.ReactNode;

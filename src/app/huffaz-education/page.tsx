@@ -49,7 +49,7 @@ export default function HuffazEducationPage() {
         eyebrow="Huffaz Education System"
         title="From Hifz to Matric: A Faster Path to Academic Success"
         intro="A specialised, accelerated academic programme for students who have already completed Hifz-ul-Quran, helping Huffaz continue their education towards Matriculation."
-        image={{ src: "/images/huffaz/students-writing-classroom.jpg", position: "35% 40%" }}
+        image={{ src: "/images/huffaz/huffaz-hifz-to-matric-classroom.jpg", position: "60% 85%" }}
       >
         <div className="enter-up mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4" style={{ animationDelay: "0.16s" }}>
           <Button href="#enquire" variant="highlight">

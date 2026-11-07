@@ -21,7 +21,7 @@ export default function AcademicsPage() {
         eyebrow="Academics"
         title="Academic excellence at every stage"
         intro="Playgroup, Nursery and Kindergarten, plus a dedicated academic pathway for Huffaz: a structured, engaging curriculum that builds strong foundations, with higher classes planned for the years ahead."
-        image={{ src: "/images/classrooms/classroom-students-hijab.jpg", position: "60% 40%" }}
+        image={{ src: "/images/classrooms/children-abc-learning-classroom.jpg", position: "60% 35%" }}
       />
       <ProgramCards id="featured-programs" variant="academics" className="py-section" />
       <Academics className="pb-section" />

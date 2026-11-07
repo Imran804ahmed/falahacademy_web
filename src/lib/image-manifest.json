@@ -1,4 +1,16 @@
 {
+  "/images/about/children-learning-ethics-classroom.jpg": {
+    "width": 1376,
+    "height": 768,
+    "hash": "011e73dcb6fed494",
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoKAAYAA4BaJYgCdAD0cjLYAAD+bIxoZ5ROHp70Vk0FFKHRehJP9OMYXCznvmtex/+nKu7rMiEhpmRpj9jFhAAA"
+  },
+  "/images/about/children-montessori-classroom.jpg": {
+    "width": 1380,
+    "height": 752,
+    "hash": "26855fa9c269d175",
+    "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoKAAUAA4BaJaACdADb66N4AP7gCVAxI/SdLTQl2rJ42h4uDpjLYYjDn+5V9c4HQAA="
+  },
   "/images/about/girls-hijab-classroom.jpg": {
     "width": 2400,
     "height": 1600,
@@ -40,6 +52,12 @@
     "height": 3600,
     "hash": "b12bc8c7f80911ac",
     "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoKAA8AA4BaJbACdAEQ+oTGAAAA/vBMWukrF2cl8q4Ui3IDU7gtvLODMmzQ1VHqi0lHuLajmoe0v6Y7O8bNkpZULF1+z73DmxSQU6kjlaJlZqCWPZt1cUQAAAA="
+  },
+  "/images/admissions/parents-teacher-classroom.jpg": {
+    "width": 1380,
+    "height": 752,
+    "hash": "dbcdf33b9479be3a",
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoKAAUAA4BaJZACdAEOZ/HeAP6ZZADyIEgBmWRbmfIAgUZRgeFOtCH95Btm71pzoG5230ktgAA="
   },
   "/images/admissions/smiling-students-hijab.jpg": {
     "width": 2400,
@@ -88,6 +106,12 @@
     "height": 1067,
     "hash": "25c27e18bafa566f",
     "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoKAAcAA4BaJYwAAlxSyjuBAAD+0ciyrigxQt2w6RTTRxjSs44HFTJ7GwAAAA=="
+  },
+  "/images/classrooms/children-abc-learning-classroom.jpg": {
+    "width": 1672,
+    "height": 941,
+    "hash": "a6d5aa163b1fc099",
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoKAAYAA4BaJQBOgBuMeRzWAAD+ZlmSpvUgWkuaGthsx7f+7STestVli9aMcU77IdCHXYAA"
   },
   "/images/classrooms/classroom-students-hijab.jpg": {
     "width": 2400,
@@ -173,6 +197,12 @@
     "hash": "ff1497761cfd47e1",
     "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoKAAcAA4BaJZQAAuyOLnTRwAD8+93352Rodkrl7oMA9p22hVo9fjaSLm7dXv9/Q6u+UJnxAazENR6DxAgAAA=="
   },
+  "/images/faculty/teacher-montessori-classroom.jpg": {
+    "width": 1380,
+    "height": 752,
+    "hash": "2a1458b05b87f140",
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoKAAUAA4BaJQBOgB+ExJPOAAD+5/8kSIedugepTbMZahRTyAwP0Qh90MY8nAv3jWNTBcAA"
+  },
   "/images/hero/islamic-school-children-classroom.jpg": {
     "width": 1376,
     "height": 768,
@@ -202,6 +232,18 @@
     "height": 752,
     "hash": "56408ad3f99fad20",
     "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoKAAUAA4BaJQBOgBuZj7gAAP387HKT7iCSv06bOsQeUiUrdcVBk5j8lFXJ7qQAAAA="
+  },
+  "/images/huffaz/huffaz-hifz-to-matric-classroom.jpg": {
+    "width": 1698,
+    "height": 926,
+    "hash": "ce637fd73e6de728",
+    "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoKAAUAA4BaJYgCdAD0ckCOAAD+4UnfW4rZFMv4fpoxLSFVNvAx4Okqutsh4AAA"
+  },
+  "/images/huffaz/huffaz-students-modern-education.jpg": {
+    "width": 1699,
+    "height": 926,
+    "hash": "af09a8e57e394dfb",
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoKAAUAA4BaJQBOgB5P+HBAAP7rmAApIX6tIdBhqP9L7P7gbXs+t3kNUNn17Mbdi1KOAAAA"
   },
   "/images/huffaz/student-writing-exam.jpg": {
     "width": 2400,
@@ -239,6 +281,12 @@
     "hash": "17f8c40e92618ae8",
     "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoKAA0AA4BaJbACdADdqnqDJ8gAAP4v0arCN5RrlF/9Hflna/nKbDQ+Ud8/awl/WUsLxAdrzryhlFZOGFOv1V5fJMtvgowAAAA="
   },
+  "/images/programs/intermediate-college-students-studying.jpg": {
+    "width": 1699,
+    "height": 926,
+    "hash": "d42f669eec1b8a3d",
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoKAAUAA4BaJYwCdADZlOfgAP636O5VoyZiuRsfQc/Ab23dV6RMNtaNLc+WBexrDucmfgAA"
+  },
   "/images/programs/intermediate-students-classroom.jpg": {
     "width": 2400,
     "height": 3200,
@@ -263,6 +311,12 @@
     "hash": "bd893af18f707a04",
     "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoKAAUAA4BaJZACdAELXPb6QAD9/SGHFo2i57st6fwnoiOwdYRzBGAr9yGSKyCYdG1UVMp8CmdrVAAA"
   },
+  "/images/programs/middle-boys-group-project-laptop.jpg": {
+    "width": 1698,
+    "height": 926,
+    "hash": "2f7d8cbfa8cc824f",
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoKAAUAA4BaJYgCdADhAriTgAD+trEBDCbSF2s8Qj8urrYbhRDYqIGWvQR1Lh4BPVQAAA=="
+  },
   "/images/programs/middle-student-writing-exam.jpg": {
     "width": 2400,
     "height": 1600,
@@ -274,6 +328,12 @@
     "height": 1600,
     "hash": "91bf3fc0ca6980ef",
     "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoKAAcAA4BaJQBOgBuuASkxNQAA/CJ4W8Das4IWUYMtx2kmyUWK7xMwS6lNSNZsWbHJWEk6ifnxrAAA"
+  },
+  "/images/programs/montessori-girls-learning-classroom.jpg": {
+    "width": 1672,
+    "height": 941,
+    "hash": "acfead59969ea350",
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoKAAYAA4BaJZACdAD5h5CqXa3AAPjWimcAHihQcOjtF1poj42+Dy1m8pXpkoavg4JieOEmudBliizAAAA="
   },
   "/images/programs/montessori.jpg": {
     "width": 2400,
@@ -299,6 +359,12 @@
     "hash": "0986e289df784781",
     "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoKAAYAA4BaJZACdAEO3//4jgAA/sYDRvbL17j8ojyc/wQ8UaX57cTaeax0a7DCYORMmaTBwAA="
   },
+  "/images/programs/primary-children-english-urdu-science.jpg": {
+    "width": 1672,
+    "height": 941,
+    "hash": "bff103c570f76805",
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoKAAYAA4BaJQBOgB8x1rpoPvgA/l9Nh+jmCQXJNWMwdWGIyhmQeXlsxeJmHsSIvtBSM9KKLZssaf+ZxUAAAA=="
+  },
   "/images/programs/primary-girls-cream-hijab.jpg": {
     "width": 2400,
     "height": 1350,
@@ -310,6 +376,12 @@
     "height": 1450,
     "hash": "b3a23254e3b0bd17",
     "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoKAAYAA4BaJQBdgCIZsrUdkAAA/QHk0pF4kgd827A3Nae2YS8IqvQHe0itHYv7b2hLvIbMkosRsSUAknFQAWsAAAA="
+  },
+  "/images/programs/secondary-matric-boys-studying.jpg": {
+    "width": 1699,
+    "height": 926,
+    "hash": "458798dd87b1ca91",
+    "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoKAAUAA4BaJQBOgCPqHHQMAAD+3xRQM8+zPjJSSJAmjlfJZKkXkeqs+59u3A+AAAA="
   },
   "/images/programs/secondary-student-white-hijab-writing.jpg": {
     "width": 2400,

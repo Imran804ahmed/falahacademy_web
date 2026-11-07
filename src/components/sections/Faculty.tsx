@@ -8,7 +8,7 @@ import { withBlur } from "@/lib/image-meta";
 
 /** How Falah Academy teachers work with students: an academic portrait rather than a staff directory. */
 export function Faculty({ className }: { className?: string }) {
-  const photo = { src: "/images/faculty/teacher-guidance.jpg" };
+  const photo = { src: "/images/faculty/teacher-montessori-classroom.jpg" };
   return (
     <section id="faculty" className={className ?? "py-section"}>
       <Container className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
@@ -42,10 +42,10 @@ export function Faculty({ className }: { className?: string }) {
           <Reveal from="clip">
             <ParallaxImage
               src={photo.src}
-              alt="Teacher guiding a student through a lesson on the computer"
+              alt="Teacher in a blue hijab guiding young students in prayer caps and hijab through a shapes puzzle in a bright Falah Academy classroom"
               sizes="(min-width: 1280px) 560px, (min-width: 1024px) 45vw, 100vw"
               blurDataURL={withBlur([photo])[0].blurDataURL}
-              className="aspect-[4/3] rounded-xl shadow-lift lg:aspect-[5/6] [&_img]:object-[60%_center]"
+              className="aspect-[4/3] rounded-xl shadow-lift lg:aspect-[5/6] [&_img]:object-[88%_center]"
             />
           </Reveal>
           <Reveal

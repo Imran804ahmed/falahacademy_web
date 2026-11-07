@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const introImage = "/images/about/students-with-textbooks.jpg";
+  const introImage = "/images/about/children-montessori-classroom.jpg";
   return (
     <>
       <PageHeader
@@ -29,8 +29,8 @@ export default function AboutPage() {
         title="Educating minds, building character"
         intro="Falah Academy is a community of dedicated teachers, families and students, from Playgroup and Kindergarten to our Huffaz Education System, working toward one goal: helping every child reach their full potential."
         image={{
-          src: "/images/about/islamic-school-classroom.jpg",
-          position: "60% 40%",
+          src: "/images/about/children-learning-ethics-classroom.jpg",
+          position: "62% 45%",
         }}
       />
 
@@ -53,10 +53,11 @@ export default function AboutPage() {
               <div className="relative aspect-[5/4] overflow-hidden rounded-xl shadow-lift">
                 <Image
                   src={introImage}
-                  alt="Group of girls in light-blue hijabs holding their school textbooks"
+                  alt="Boys in white kurtas and prayer caps and a girl in a grey hijab playing with learning puzzles at a wooden table in a bright Falah Academy classroom"
                   fill
                   sizes="(min-width: 1024px) 40vw, 100vw"
                   className="object-cover"
+                  style={{ objectPosition: "14% 55%" }}
                   {...blurProps(introImage)}
                 />
               </div>
