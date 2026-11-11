@@ -17,7 +17,7 @@ export default function ContactPage() {
         eyebrow="Contact Us"
         title="We'd love to hear from you"
         intro="Whether you're exploring admissions or have a question as a current parent, our office is here to help."
-        image={{ src: "/images/facilities/library-aisle.jpg", position: "center 40%" }}
+        image={{ src: "/images/contact/students-hear-from-you.jpg", position: "60% 90%" }}
       />
       <Contact />
       <FAQ className="surface-tint py-section" />

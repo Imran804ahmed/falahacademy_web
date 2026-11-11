@@ -20,7 +20,7 @@ export default function AdmissionsPage() {
         eyebrow="Admissions"
         title="Start Your Child's Journey at Falah Academy"
         intro="We welcome families who share our commitment to learning, character and community, for Playgroup, Nursery and Kindergarten and for Huffaz joining our Huffaz Education System. Here is everything you need to know."
-        image={{ src: "/images/admissions/smiling-students-hijab.jpg", position: "62% 35%" }}
+        image={{ src: "/images/admissions/students-start-journey.jpg", position: "60% 78%" }}
       >
         <div className="enter-up mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4" style={{ animationDelay: "0.16s" }}>
           <Button href="#apply" variant="highlight">

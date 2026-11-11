@@ -216,6 +216,9 @@ export function ContactForm({ defaultSubject = "" }: { defaultSubject?: string }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6" noValidate aria-busy={status === "submitting"}>
+      {/* read by the form provider: email subject line and layout */}
+      <input type="hidden" name="_subject" value={`New website message - ${siteConfig.name}`} />
+      <input type="hidden" name="_template" value="table" />
       <div className="grid gap-6 sm:grid-cols-2">
         <Field label="Name" name="name" isRequired error={errors.name}>
           <input {...fieldProps("name")} type="text" autoComplete="name" className={cn(fieldClasses)} placeholder="Your full name" />

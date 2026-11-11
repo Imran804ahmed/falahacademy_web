@@ -65,6 +65,12 @@
     "hash": "30f0ee77977075f3",
     "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoKAAcAA4BaJYgCdADQ8SOHUAD5cdJ+TyKH3P6DGYQOa/UjVHcAFYTRg2GUWY6OFx8NRgJNAOMwJhEcAAA="
   },
+  "/images/admissions/students-start-journey.jpg": {
+    "width": 1672,
+    "height": 941,
+    "hash": "a8e0f9d69de62c0d",
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoKAAYAA4BaJYwCdADdlBiLhAD+CDtXaxo+YANkRIP8L+Lk2VrX7IoYvFQFx1R3iBaIAAAA"
+  },
   "/images/brand/logo-compact-light.png": {
     "width": 826,
     "height": 337,
@@ -142,6 +148,12 @@
     "height": 1200,
     "hash": "bddf7689dfde7a0f",
     "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoKAAgAA4BaJYgCdAEYEYzO4XzDoAD+QSRoS8xXTHt6aCN3hxugYDj2i4bRVERAlzP5f1J2Hy6iye+vgoFAWPdrjxCZfSgIywOSgsAA"
+  },
+  "/images/contact/students-hear-from-you.jpg": {
+    "width": 1672,
+    "height": 941,
+    "hash": "41c3de67be1aba2c",
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoKAAYAA4BaJYwCdAEU9qED9oAA/gg7V2sZTyABgKqkT4bFW7dMFWdpyZDYLmFTOXKDMAAA"
   },
   "/images/events/debate.jpg": {
     "width": 1600,
@@ -242,8 +254,8 @@
   "/images/huffaz/huffaz-students-modern-education.jpg": {
     "width": 1699,
     "height": 926,
-    "hash": "af09a8e57e394dfb",
-    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoKAAUAA4BaJQBOgB5P+HBAAP7rmAApIX6tIdBhqP9L7P7gbXs+t3kNUNn17Mbdi1KOAAAA"
+    "hash": "47e45a850c184617",
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoKAAUAA4BaJYgCdADyf/7UAP7rl/u17A9P6AZPtKvPO+UOlbZnkPRa5V1qrKWjE247wAAA"
   },
   "/images/huffaz/student-writing-exam.jpg": {
     "width": 2400,
@@ -484,5 +496,17 @@
     "height": 3200,
     "hash": "fb9162b4fd37a60b",
     "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoKAA0AA4BaJQBOgBu1GSNiIQAA+jh4hmBCxg4l+Ww1/KmhqboICzEkBd4SXvnWbduNqbH7xSeu2b470uPamVDrgFd7EduDGgVAAAAA"
+  },
+  "/images/student-life/students-library-study-group.jpg": {
+    "width": 1699,
+    "height": 926,
+    "hash": "e12a1fdc5dd2da23",
+    "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoKAAUAA4BaJYwCdAEeglxTM5CAAP6yNvVpBQEbdDigmUTAm5/IdbB/tmlE9lZ2AAA="
+  },
+  "/images/student-life/students-robotics-activities.jpg": {
+    "width": 1698,
+    "height": 926,
+    "hash": "25e7f5f27d86755a",
+    "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoKAAUAA4BaJQBOgCKq4EdSSAD+xFmAj7WWQAx6+LPg7CqN1kFKR3nf4AAAAA=="
   }
 }

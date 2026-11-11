@@ -8,7 +8,7 @@ import { withBlur } from "@/lib/image-meta";
 export const metadata: Metadata = {
   title: "Gallery",
   description:
-    "Photos of Falah Academy: classrooms, students, campus, activities, sports and events.",
+    "Photos of Falah Academy: classrooms, early years, students and activities.",
   alternates: { canonical: "/gallery" },
 };
 
@@ -19,7 +19,7 @@ export default function GalleryPage() {
         eyebrow="Gallery"
         title="Moments from school life"
         intro="A glimpse of everyday learning, friendships, celebrations and achievements at Falah Academy."
-        image={{ src: "/images/student-life/schoolgirls-white-hijab-smiling.jpg", position: "60% 35%" }}
+        image={{ src: "/images/student-life/students-library-study-group.jpg", position: "60% 70%" }}
       />
 
       <section className="py-section-sm">

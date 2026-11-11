@@ -19,7 +19,7 @@ export default function StudentLifePage() {
         eyebrow="Student Life"
         title="A vibrant life beyond the classroom"
         intro="At Falah Academy, students grow through play, competition, creativity and service, discovering their talents and building friendships along the way."
-        image={{ src: "/images/student-life/boys-topi-school-window.jpg", position: "center 40%" }}
+        image={{ src: "/images/student-life/students-robotics-activities.jpg", position: "60% 75%" }}
       />
       <StudentLife />
       <Activities />

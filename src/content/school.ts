@@ -414,7 +414,7 @@ export const huffazEducation = {
   ],
   // home-page spotlight and the overview section of /huffaz-education
   spotlightImage: { src: "/images/huffaz/huffaz-class-with-teacher.jpg", alt: "Smiling boys in grey uniforms and prayer caps at their desks with their teacher in a bright Falah Academy classroom", position: "55% 50%" } as Photo,
-  overviewImage: { src: "/images/huffaz/huffaz-students-modern-education.jpg", alt: "Huffaz students in white kurtas and prayer caps studying mathematics, physics, chemistry and English beneath a Huffaz Education System sign", position: "28% 45%" } as Photo,
+  overviewImage: { src: "/images/huffaz/huffaz-students-modern-education.jpg", alt: "Huffaz students in white kurtas and prayer caps studying mathematics, physics, chemistry and English beneath a Huffaz Education System sign", position: "0% 50%" } as Photo,
   clarification:
     "This programme does not teach Quran memorisation. It is designed for students who have already completed Hifz-ul-Quran and now want to continue their academic education.",
   highlights: [
@@ -673,45 +673,34 @@ export type GalleryPhoto = Photo & { category: string; caption: string; blurData
 
 export const galleryCategories: PhotoCategory[] = [
   { key: "classrooms", label: "Classrooms" },
+  { key: "early-years", label: "Early Years" },
   { key: "students", label: "Students" },
-  { key: "campus", label: "Campus" },
   { key: "activities", label: "Activities" },
-  { key: "sports", label: "Sports" },
-  { key: "events", label: "Events" },
 ];
 
-// TODO: replace with real photographs of Falah Academy as they become available
+// Falah Academy's own photographs, the same set used across the site
 export const galleryPhotos: GalleryPhoto[] = [
-  { src: "/images/classrooms/early-learning.jpg", alt: "Student in a red headscarf during a classroom activity", category: "classrooms", caption: "Activity-based learning" },
-  { src: "/images/programs/intermediate.jpg", alt: "College student holding her books", category: "students", caption: "Eager to learn" },
-  { src: "/images/student-life/friends-white-hijab.jpg", alt: "Two smiling girls in white hijabs", category: "students", caption: "Friendships that last" },
-  { src: "/images/student-life/independence-day.jpg", alt: "Student at his desk beside a Pakistan flag", category: "events", caption: "Independence Day" },
-  { src: "/images/facilities/computer-lab.jpg", alt: "Students working at computers in the lab", category: "classrooms", caption: "Computer lab" },
-  { src: "/images/hero/islamic-school-girls-reading.jpg", alt: "Girls in hijabs reading together at a classroom desk", category: "classrooms", caption: "Reading together" },
-  { src: "/images/programs/middle-student-writing-exam.jpg", alt: "Student in a prayer cap writing at his desk", category: "classrooms", caption: "Focused work" },
-  { src: "/images/classrooms/classroom-students-hijab.jpg", alt: "Classroom of students in hijabs during a lesson", category: "classrooms", caption: "A full classroom" },
-  { src: "/images/student-life/cricket.jpg", alt: "Students playing a cricket match", category: "sports", caption: "Cricket on the ground" },
-  { src: "/images/classrooms/hands-on-learning.jpg", alt: "Student holding a learning ring during a class activity", category: "activities", caption: "Learning by doing" },
-  { src: "/images/programs/early-years-girl-white-hijab.jpg", alt: "Smiling young girl in a white school hijab", category: "students", caption: "Our youngest learners" },
-  { src: "/images/events/graduation.jpg", alt: "Graduates in gowns holding their caps", category: "events", caption: "Celebrating our graduates" },
-  { src: "/images/facilities/library-stacks.jpg", alt: "Rows of bookshelves in the library", category: "campus", caption: "The library" },
-  { src: "/images/programs/secondary-student-white-hijab-writing.jpg", alt: "Student in a white hijab writing at her desk", category: "classrooms", caption: "Focused study" },
-  { src: "/images/programs/intermediate-students-classroom.jpg", alt: "Senior students in hijabs studying at their desks", category: "classrooms", caption: "Learning together" },
-  { src: "/images/student-life/children-topi-celebration.jpg", alt: "Smiling children in prayer caps holding gifts at a celebration", category: "events", caption: "Celebrations together" },
-  { src: "/images/admissions/new-student-white-topi.jpg", alt: "Smiling young boy in a white kurta and prayer cap", category: "students", caption: "A bright start" },
-  { src: "/images/classrooms/montessori-materials.jpg", alt: "Wooden letter blocks and play dough", category: "activities", caption: "Montessori materials" },
-  { src: "/images/facilities/science-lab.jpg", alt: "Microscope in the science lab", category: "campus", caption: "Science lab" },
-  { src: "/images/student-life/football-match.jpg", alt: "Football being kicked on a green pitch", category: "sports", caption: "Football" },
-  { src: "/images/classrooms/modern-classroom.jpg", alt: "Classroom with desks and a chalkboard", category: "campus", caption: "Our classrooms" },
-  { src: "/images/student-life/painting.jpg", alt: "Child painting colourful artwork", category: "activities", caption: "Art class" },
-  { src: "/images/events/debate.jpg", alt: "Microphone on stage at a debate", category: "events", caption: "Debate competition" },
-  { src: "/images/campus/play-area.jpg", alt: "Outdoor play area with slides", category: "campus", caption: "Play area" },
-  { src: "/images/services/tuition-huffaz-banners.jpg", alt: "Banners for the Huffaz Tuition Centre, Tuition Center and Academic Tuition", category: "campus", caption: "Tuition & Huffaz classes" },
-  { src: "/images/services/test-prep-counseling-banners.jpg", alt: "Banners for Test Prep Services, Career Counseling and Academic Tuition", category: "campus", caption: "Test prep & career counseling" },
-  { src: "/images/services/wall-banners.jpg", alt: "Wall banners for science and maths, Huffaz tuition, tuition classes and public speaking", category: "campus", caption: "Our programmes" },
-  { src: "/images/about/students-with-textbooks.jpg", alt: "Group of girls in light-blue hijabs holding their school textbooks", category: "students", caption: "Proud of their books" },
-  { src: "/images/huffaz/students-writing-classroom.jpg", alt: "Boys in white uniforms writing in their notebooks during a lesson", category: "classrooms", caption: "Focused learning" },
-  { src: "/images/student-life/boys-topi-school-window.jpg", alt: "Smiling boys in white prayer caps looking out of a classroom window", category: "students", caption: "Friends at school" },
+  { src: "/images/admissions/falah-classroom-students.jpg", alt: "A busy Falah Academy classroom with boys in prayer caps reading at their desks, a teacher guiding them and younger children at a learning table", category: "classrooms", caption: "A day in class" },
+  { src: "/images/hero/islamic-school-children-classroom.jpg", alt: "Two boys in white prayer caps and a girl in a grey hijab building with blocks and writing at a classroom table", category: "early-years", caption: "Learning through play" },
+  { src: "/images/huffaz/huffaz-hifz-to-matric-classroom.jpg", alt: "Huffaz students, boys in white kurtas and prayer caps and girls in grey hijabs, studying at their desks with open textbooks", category: "students", caption: "From Hifz to Matric" },
+  { src: "/images/about/islamic-classroom-learning.jpg", alt: "Children in hijab, kurtas and prayer caps learning on a tablet, with alphabet puzzles and a teacher at the whiteboard", category: "classrooms", caption: "Modern tools, strong values" },
+  { src: "/images/programs/playgroup-islamic-classroom.jpg", alt: "Young children in hijab, kurtas and prayer caps playing with building blocks, a picture book and a magnifying glass with their teacher", category: "early-years", caption: "Playgroup" },
+  { src: "/images/programs/nursery-islamic-classroom.jpg", alt: "Young children in hijab, kurtas and prayer caps tracing letters in a sand tray, doing shape puzzles and exploring a map with their teacher", category: "early-years", caption: "Nursery" },
+  { src: "/images/programs/kindergarten-islamic-classroom.jpg", alt: "Smiling boy in a prayer cap and girl in a lilac hijab working with a fractions puzzle and alphabet letters beside their teacher", category: "early-years", caption: "Kindergarten" },
+  { src: "/images/student-life/students-robotics-activities.jpg", alt: "Boys in white kurtas and prayer caps building a robot car together, with chess and table tennis in the background", category: "activities", caption: "Robotics & clubs" },
+  { src: "/images/huffaz/huffaz-students-modern-education.jpg", alt: "Huffaz students in white kurtas and prayer caps studying mathematics, physics, chemistry and English beneath a Huffaz Education System sign", category: "students", caption: "Huffaz Education System" },
+  { src: "/images/classrooms/children-abc-learning-classroom.jpg", alt: "Boys in white prayer caps and a girl in a grey hijab learning with ABC blocks, counting beads and picture books", category: "early-years", caption: "First letters and numbers" },
+  { src: "/images/admissions/parents-teacher-classroom.jpg", alt: "Parents meeting a teacher in a hijab while their children work with puzzles at a classroom table", category: "classrooms", caption: "Parents and teachers together" },
+  { src: "/images/student-life/students-library-study-group.jpg", alt: "Older boys in white kurtas and prayer caps discussing their textbooks around a library table", category: "students", caption: "Studying together" },
+  { src: "/images/about/children-learning-ethics-classroom.jpg", alt: "Two boys in prayer caps threading counting beads and a girl in a hijab writing in a workbook in a bright classroom", category: "early-years", caption: "Curious young minds" },
+  { src: "/images/programs/middle-boys-group-project-laptop.jpg", alt: "Four boys in white kurtas and prayer caps working together on a group project with a laptop, textbooks and a robot car", category: "activities", caption: "Group projects" },
+  { src: "/images/faculty/teacher-montessori-classroom.jpg", alt: "Teacher in a blue hijab guiding young students in prayer caps and hijab through a shapes puzzle", category: "classrooms", caption: "Caring teachers" },
+  { src: "/images/programs/montessori-girls-learning-classroom.jpg", alt: "Young girls in grey hijabs stacking blocks, tracing letters and reading picture books at a Montessori table", category: "early-years", caption: "Montessori learning" },
+  { src: "/images/admissions/students-start-journey.jpg", alt: "Boys in white kurtas and prayer caps smiling as they study together with a laptop and books", category: "students", caption: "Friends in learning" },
+  { src: "/images/about/children-montessori-classroom.jpg", alt: "Boys in white kurtas and prayer caps and a girl in a grey hijab playing with learning puzzles at a wooden table", category: "activities", caption: "Hands-on learning" },
+  { src: "/images/programs/primary-children-english-urdu-science.jpg", alt: "Boys in prayer caps and girls in grey hijabs learning with English, Urdu and science books, number blocks and a tablet around a classroom table", category: "classrooms", caption: "English, Urdu and science" },
+  { src: "/images/programs/secondary-matric-boys-studying.jpg", alt: "Students in white kurtas and prayer caps writing at their desks with mathematics, physics and chemistry textbooks", category: "students", caption: "Exam preparation" },
+  { src: "/images/programs/intermediate-college-students-studying.jpg", alt: "Older students in white kurtas and prayer caps studying with a laptop and physics, mathematics, chemistry and biology textbooks", category: "students", caption: "Ready for the future" },
 ];
 
 // ---- News & events -----------------------------------------------------------

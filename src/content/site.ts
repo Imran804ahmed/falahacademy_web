@@ -70,7 +70,7 @@ export const siteConfig = {
   // 1) POSTs to a static-form provider (Formspree, Getform, Basin…) when
   //    `contactFormEndpoint` is set, or
   // 2) opens a pre-filled email to `contact.email` in the visitor's mail app.
-  contactFormEndpoint: "", // TODO optional
+  contactFormEndpoint: "https://formsubmit.co/ajax/imran804ahmed@gmail.com",
 
   // header navigation (kept short so it fits on one line)
   nav: [
